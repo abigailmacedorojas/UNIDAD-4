@@ -1,0 +1,3123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CDN Bootstrap CSS-->
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+crossorigin="anonymous" >
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+<link rel="stylesheet" href="estilo.css">
+ <link rel="stylesheet" href="fed.css" />
+<title>♠ ComComics ♠</title>
+<style>
+  body{
+      background-image: url(https://static.vecteezy.com/system/resources/previews/001/978/612/non_2x/comic-style-red-background-with-cloud-free-vector.jpg);
+      background-size: 100%;
+  }
+  .img{
+      margin-top: -20px;
+      margin-left: -55px;
+      margin-bottom: -20px;
+  }
+  @font-face {
+    font-family:hol ;
+    src: url(/Authorization.ttf);
+  }
+  .contenido{
+    margin-top: 300px;
+    margin-right: 20px;
+    margin-left: 30px;
+  }
+  .fot{
+    background-color: rgba(114, 114, 4, 0.268);
+  }
+</style>
+
+</head>
+<body class="gradient-custom">
+      <div class="container ">
+        <div class="container " id="login">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card bg-dark text-white" style="border-radius: 1rem; height: 700px;">
+                <div class="card-body  text-center">
+                  <div class="mb-md-5 mt-md-4">
+                      <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                      <p class="text-white-50 mb-5">
+                          Por favor, Ingrese su email y contraseña.
+                      </p>
+                      <div id="alert-login" class="alert alert-danger d-none" role="alert">
+                    Email y contraseña incorrectos.       
+                    </div>
+                    <div id="alert-login-registro" class="alert alert-danger d-none">
+                    Email ya se encuentra registrado, favor utilizar otro.    
+                    </div>
+                    <form id="IngresoEmailForm" action=""> 
+                       <div class="form-outline form-white mb-4">
+                           <input
+                           type="email"
+                           id="IngresoEmail"
+                           class="form-control form-control-lg">                    
+                        
+                           <label class="form-label"
+                           for="IngresoEmail"> Email </label>
+                           
+                        </div>
+                        <div class="form-outline form-white mb-4">
+                            <input
+                            type="password"
+                            id="ingresoPassword"
+                            class="form-control form-control-lg">  
+                            <label class="form-label"
+                            for="ingresoPassword"> Password </label>
+                         </div>
+                         <button 
+                         class="btn btn-outline-light btn-lg px-5 w-100"
+                         type="submit"
+                         id="btnIngresoConEmail">
+                        Ingresar                        
+                        </button>
+                        <button 
+                        class="btn btn-outline-light btn-lg px-5 w-100"
+                        type="submit"
+                        id="btnRegistroConEmail">
+                       Registrar
+                        </button>      
+                           </form>
+                           
+                           <div 
+                           class="d-flex justify-content-center text-center mt-4 pt-1">
+                        <button
+                        class="btn btn-outline-light btn-lg px-5 w-100"
+                        id="btnIngresoGmail">
+                    Ingreso con Google
+                                      
+                    </button>
+                    </div>
+                  </div>
+                  <div id="registrateAviso">
+                   <p class="mb-0">
+                       No tienes una cuenta
+                       <a href="#!" id="registrate" class="text-white-50 fw-bold"> Registrate</a>
+                   </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+      </div>
+            <!-- <div class="card bg-dark text-white mx-auto" id="contenidoWeb"
+             style="border-radius: 1rem; width: 800px;">
+             <div class="card-body">
+<form id="postForm" action="">
+<h5> Escribe tu mensaje </h5>
+<label class="form-label" for="postText">mensaje</label>
+<div class="form-outline form-white mb-4">
+<textarea class="form-control form-control-lg"
+id="postText" rows="3"></textarea>
+</div>
+<button id="btnSendPost" class="btn btn-outline-light btn-lg px-5" type="submit"> Postear </button>
+</form>
+            </div>
+             </div>
+             <div id="postList">
+             </div>   
+             </div>-->
+              
+    <div
+    class="bg-danger d-flex align-items-center "
+    style="width: 1355px;"
+    id="contenidoWeb" >
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col d-flex align-items-center">
+          <a href="inicia.html"><img class="img" style="margin-left: -30;" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9abda333899292.56bc43f7e24d8.png" width="205" height="120px"></i></a>
+        
+          <div class="input-group ms-2" type="button">
+      
+            <span
+              class="input-group-prepend d-lg-none"
+              id="searchMenu"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            >
+              <div
+                class="input-group-text bg-warning border-0 rounded-circle"
+                style="min-height: 40px"
+              >
+                <i class="fas fa-search text-dark"></i>
+              </div>
+            </span>
+            <span
+              class="input-group-prepend d-none d-lg-block"
+              id="searchMenu"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            >
+              <div
+                class="input-group-text bg-warning border-0 rounded-pill"
+                style="min-height: 40px; min-width: 230px"
+              >
+                <i class="fas fa-search me-2 text-dark"></i>
+                <p class="m-0 fs-7 text-dark">Buscar ComComics...</p>
+              </div>
+            </span>
+            <ul
+              class="dropdown-menu overflow-auto bg-danger border-0  text-dark  p-3"
+              aria-labelledby="searchMenu"
+              style="width: 20em; max-height: 600px"
+            >
+              <li>
+                <input
+                  type="text"
+                  class="rounded-pill border-0 bg-warning text-dark dropdown-item"
+                  placeholder="Buscar ComComics..."
+                  autofocus
+                />
+              </li>
+              <li class="my-4">
+                <div
+                  class="
+                    alert
+                    fade
+                    show
+                    dropdown-item
+                    p-1
+                    m-0
+                    d-flex
+                    align-items-center
+                    justify-content-between
+                  "
+                  role="alert"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://source.unsplash.com/random/1"
+                      alt="avatar"
+                      class="rounded-circle me-2"
+                      style="width: 35px; height: 35px; object-fit: cover"
+                    />
+                    <p class="m-0">Lorem ipsum</p>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn-close p-0 m-0"
+                    data-bs-dismiss="alert"
+                    aria-label="Close"
+                  ></button>
+                </div>
+              </li>
+              <li class="my-4">
+                <div
+                  class="
+                    alert
+                    fade
+                    show
+                    dropdown-item
+                    p-1
+                    m-0
+                    d-flex
+                    align-items-center
+                    justify-content-between
+                  "
+                  role="alert"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://source.unsplash.com/random/2"
+                      alt="avatar"
+                      class="rounded-circle me-2"
+                      style="width: 35px; height: 35px; object-fit: cover"
+                    />
+                    <p class="m-0">Lorem ipsum</p>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn-close p-0 m-0"
+                    data-bs-dismiss="alert"
+                    aria-label="Close"
+                  ></button>
+                </div>
+              </li>
+              <li class="my-4">
+                <div
+                  class="
+                    alert
+                    fade
+                    show
+                    dropdown-item
+                    p-1
+                    m-0
+                    d-flex
+                    align-items-center
+                    justify-content-between
+                  "
+                  role="alert"
+                >
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://source.unsplash.com/random/3"
+                      alt="avatar"
+                      class="rounded-circle me-2"
+                      style="width: 35px; height: 35px; object-fit: cover"
+                    />
+                    <p class="m-0">Lorem ipsum</p>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn-close p-0 m-0"
+                    data-bs-dismiss="alert"
+                    aria-label="Close"
+                  ></button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col d-none d-xl-flex justify-content-center">
+          <div class="mx-4 nav__btn nav">
+            <a href="inicia.html"><button type="button" class="btn px-4">
+              <i class="fas fa-home text-dark fs-4"></i>
+            </button></a>
+          </div>
+          <div class="mx-4 nav__btn">
+            <a href="indexi.html"><button type="button" class="btn px-4">
+              <i class="fas fa-store text-dark fs-4"></i>
+            </button></a>
+          </div>
+          <div class="mx-4 nav__btn">
+            <a href="amigos.html"><button type="button" class="btn px-4">
+              <i type="button"class="position-relative fas fa-users text-dark fs-4" >
+                <span class="  position-absolute  top-0 start-100 translate-middle badge rounded-pill bg-warning" style="font-size: 0.5rem" >
+                 99
+                  <span class="visually-hidden"></span>
+                </span>
+              </i>
+            </button></a> 
+          </div>
+          <div class="mx-4 nav__btn">
+            <button type="button" class="btn px-4">
+              <i class="fas fa-book  text-dark fs-4"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col d-flex align-items-center justify-content-end">
+          <div class="align-items-center justify-content-center d-none d-xl-flex"  >
+            <a href="perfil.html"><img src="https://i.pinimg.com/564x/69/cb/b2/69cbb22f94b0329f438d965234de81a4.jpg"  class="rounded-circle me-2" alt="avatar" style="width: 38px; height: 38px; object-fit: cover"  />
+            </a><p class="m-0">Aslan</p>
+          </div>
+                     
+          <div class=" rounded-circle  p-1 bg-warning d-flex align-items-center justify-content-center mx-2 "style="width: 38px; height: 38px"  type="button"id="mainMenu"data-bs-toggle="dropdown"aria-expanded="false" data-bs-auto-close="outside" >
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <ul class="dropdown-menu border-0 shadow p-3 bg-danger overflow-auto" aria-labelledby="mainMenu"  style="width: 23em; max-height: 600px"  >
+              <div>
+                <li class="p-1 mx-2">
+                  <h2>Menu</h2>
+                </li>
+                <li class="p-1">
+                  <div class="input-group-text bg-warning border-0 rounded-pill"  style="min-height: 40px; min-width: 230px">
+                    <i class="fas fa-search me-2 text-dark"></i>
+                    <input type="text" class="form-control rounded-pill border-0 bg-warning text-dark" placeholder="Search Menu"/>
+                  </div>
+                </li>
+                <h4 class="m-2">Social</h4>
+                <li class="my-2 p-1">
+                  <a href="#" class="text-decoration-none text-dark  d-flex  align-items-center justify-content-between ">
+                    <div class="p-2">
+                      <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/Y7r38CcFEw5.png" alt="icon from fb" class="rounded-circle" style="width: 48px; height: 48px; object-fit: cover" />
+                    </div>
+                    <div>
+                      <p class="m-0">Entretenimiento</p>
+                      <span class="fs-7 text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Odio, commodi.</span>
+                    </div>
+                  </a>
+                </li>
+               
+                <li class="my-2 p-1">
+                  <a href="#" class=" text-decoration-none text-dark  d-flex  align-items-center justify-content-between " >
+                    <div class="p-2">
+                      <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/tSXYIzZlfrS.png" alt="icon from fb" class="rounded-circle" style="width: 48px; height: 48px; object-fit: cover" />
+                    </div>
+                    <div>
+                      <p class="m-0">amigos</p>
+                      <span class="fs-7 text-dark"
+                        >Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Odio, commodi.</span  >
+                    </div>
+                  </a>
+                </li>
+                <li class="my-2 p-1">
+                  <a  href="#"  class="  text-decoration-none text-dark d-flex align-items-center justify-content-between ">
+                    <div class="p-2">
+                      <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/Im_0d7HFH4n.png"  alt="icon from fb"  class="rounded-circle" style="width: 48px; height: 48px; object-fit: cover" />
+                    </div>
+                    <div>
+                      <p class="m-0">Grupos</p>
+                      <span class="fs-7 text-dark"
+                        >Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Odio, commodi.</span>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="my-2 p-1">
+                  <a href="#" class=" text-decoration-none text-dark  d-flex align-items-center justify-content-between  "  >
+                    <div class="p-2">
+                      <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/hLkEFzsCyXC.png"  alt="icon from fb"  class="rounded-circle" style="width: 48px; height: 48px; object-fit: cover"/>
+                    </div>
+                    <div>
+                      <p class="m-0">Noticias</p>
+                      <span class="fs-7 text-dark">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Odio, commodi.</span>
+                    </div>
+                  </a>
+                </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <li class="my-2 p-1">
+                  <a
+                    href="#"
+                    class="
+                      text-decoration-none text-dark
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                    "
+                  >
+                    <div class="p-2">
+                      <img
+                        src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/0gH3vbvr8Ee.png"
+                        alt="icon from fb"
+                        class="rounded-circle"
+                        style="width: 48px; height: 48px; object-fit: cover"
+                      />
+                    </div>
+                    <div>
+                      <p class="m-0">Paginas</p>
+                      <span class="fs-7 text-dark"
+                        >Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Odio, commodi.</span
+                      >
+                    </div>
+                  </a>
+                </li>
+                <hr />
+
+                
+     
+  
+    </a>
+  </li>
+</div>
+</ul>
+<div
+class="
+  rounded-circle
+  p-1
+  bg-warning
+  d-flex
+  align-items-center
+  justify-content-center
+  mx-2
+"
+style="width: 38px; height: 38px"
+type="button"
+id="chatMenu"
+data-bs-toggle="dropdown"
+aria-expanded="false"
+data-bs-auto-close="outside"
+>
+<i class="fas fa-comment"></i>
+</div>
+<ul
+class="dropdown-menu border-0 shadow p-3 overflow-auto bg-danger"
+aria-labelledby="chatMenu"
+style="width: 23em; max-height: 600px"
+>
+<li class="p-1">
+  <div class="d-flex justify-content-between">
+    <h2>Mensajes</h2>
+    <div>
+      <i
+        class="fas fa-ellipsis-h text-dark mx-2"
+        type="button"
+        data-bs-toggle="dropdown"
+      ></i>
+      <ul class="dropdown-menu shadow bg-warning" style="width: 18em">
+        <div class="p-2">
+          <h5>Ajustes de Chat</h5>
+          <span class="text-dark fs-7"
+            >Personaliza tus mensajes.</span
+          >
+        </div>
+        <hr />
+        <li>
+          <div
+            class="
+              dropdown-item
+              d-flex
+              align-items-center
+              justify-content-between
+            ">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-phone-alt me-3 text-dark"></i>
+              <p class="m-0">Tonos de Llamada Entrante</p>
+            </div>
+            <div class="form-check form-switch m-0">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="flexSwitchCheckChecked"
+                checked
+              />
+              <label
+                class="form-check-label"
+                for="flexSwitchCheckChecked"
+              ></label>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div
+            class="
+              dropdown-item
+              d-flex
+              align-items-center
+              justify-content-between
+            "
+          >
+            <div class="d-flex align-items-center">
+              <i class="fas fa-volume-off me-4 fs-4"></i>
+              <p class="m-0">Tonos de Mensajes</p>
+            </div>
+            <div class="form-check form-switch m-0">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="flexSwitchCheckChecked"
+                checked
+              />
+              <label
+                class="form-check-label"
+                for="flexSwitchCheckChecked"
+              ></label>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div
+            class="
+              dropdown-item
+              d-flex
+              align-items-center
+              justify-content-between
+            "
+          >
+            <div class="d-flex align-items-center">
+              <i class="fas fa-spinner me-3"></i>
+              <p class="m-0">Abrir Nuevos Mensajes </p>
+            </div>
+            <div class="form-check form-switch m-0">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="flexSwitchCheckChecked"
+                checked
+              />
+              <label
+                class="form-check-label"
+                for="flexSwitchCheckChecked"
+              ></label>
+            </div>
+          </div>
+          <span class="ms-5 text-muted fs-7"
+            >Abrir nuevos mensajes automaticamente.</span
+          >
+        </li>
+        <hr class="m-0" />
+        <li>
+          <div
+            class="
+              dropdown-item
+              d-flex
+              align-items-center
+              justify-content-between
+            "
+          >
+            <div class="d-flex align-items-center">
+              <i class="fas fa-toggle-off me-3"></i>
+              <p class="m-0">Apagar estado activo</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div
+            class="
+              dropdown-item
+              d-flex
+              align-items-center
+              justify-content-between
+              text-dark
+
+            "
+          >
+            <div class="d-flex align-items-center">
+              <i class="fas fa-shield-alt me-3 text-dark"></i>
+              <p class="m-0">Ajustes de Bloqueo</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <i
+        class="fas fa-expand-arrows-alt text-dark mx-2"
+        type="button"
+      ></i>
+      <i
+        class="fas fa-edit text-dark mx-2"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#newChat"
+      ></i>
+    </div>
+  </div>
+</li>
+<li class="p-1">
+  <div
+    class="input-group-text bg-warning border-0 rounded-pill"
+    style="min-height: 40px; min-width: 230px"
+  >
+    <i class="fas fa-search me-2 text-muted"></i>
+    <input
+      type="text"
+      class="form-control rounded-pill border-0 bg-warning"
+      placeholder="Buscar Mensajes "
+    />
+  </div>
+</li>
+<hr class="m-0" />
+<a href="#" class="text-decoration-none">
+  <p class="fw-bold text-center pt-3 m-0">Ver Todo en Mensajes </p>
+</a>
+</ul>
+<div
+class="
+  rounded-circle
+  p-1
+  bg-warning
+  d-flex
+  align-items-center
+  justify-content-center
+  mx-2
+"
+style="width: 38px; height: 38px"
+type="button"
+id="notMenu"
+data-bs-toggle="dropdown"
+aria-expanded="false"
+data-bs-auto-close="outside"
+>
+<i class="fas fa-bell"></i>
+</div>
+<ul
+class="dropdown-menu border-0 shadow p-3 bg-danger"
+aria-labelledby="notMenu"
+style="width: 23em; max-height: 600px; overflow-y: auto"
+>
+<li class="p-1">
+  <div class="d-flex justify-content-between">
+    <h2>Notificaciones</h2>
+    <div>
+      <i
+        class="
+          fas
+          fa-ellipsis-h
+          pointer
+          p-2
+          rounded-circle
+          bg-danger
+        "
+        type="button"
+        data-bs-toggle="dropdown"
+      ></i>
+      <ul class="dropdown-menu bg-warning">
+        <li
+          class="dropdown-item d-flex align-items-center"
+          type="button"
+        >
+          <i class="fas fa-check me-3 text-dark"></i>
+          <p class="m-0">Marcar todo como leído</p>
+        </li>
+        <li
+          class="dropdown-item d-flex align-items-center"
+          type="button"
+        >
+          <i class="fas fa-cog me-3 text-dark"></i>
+          <p class="m-0">Privacy Checkup</p>
+        </li>
+        <li
+          class="dropdown-item d-flex align-items-center"
+          type="button"
+        >
+          <i class="fas fa-desktop me-3 text-dark"></i>
+          <p class="m-0">Privacy Shortcuts</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="d-flex" type="button">
+    <p class="rounded-pill bg-danger p-2">Todo</p>
+    <p class="ms-3 rounded-pill bg-warning p-2 text-dark">
+     No Leído
+    </p>
+  </div>
+</li>
+<div class="d-flex justify-content-between mx-2">
+  <h5>Nuevo</h5>
+  <a href="#" class="text-decoration-none">Ver Todo</a>
+</div>
+
+</ul>
+
+
+
+
+
+
+<div
+class="
+  rounded-circle
+  p-1
+  bg-warning
+  d-flex
+  align-items-center
+  justify-content-center
+  mx-2
+"
+style="width: 38px; height: 38px"
+type="button"
+id="secondMenu"
+data-bs-toggle="dropdown"
+aria-expanded="false"
+data-bs-auto-close="outside"
+>
+<i class="fas fa-caret-down"></i>
+</div>
+<ul
+class="dropdown-menu border-0 bg-danger shadow p-3"
+aria-labelledby="secondMenu"
+style="width: 23em"
+>
+<a href="perfil.html" style="text-decoration: none;"><li class="dropdown-item p-1 rounded d-flex" type="button">
+  <img
+    src="https://i.pinimg.com/564x/69/cb/b2/69cbb22f94b0329f438d965234de81a4.jpg"
+    alt="avatar"
+    class="rounded-circle me-2"
+    style="width: 45px; height: 45px; object-fit: cover"
+  />
+  <div>
+    <p class="m-0">Ash</p>
+   <p class="m-0 text-dark">Ve tu Perfil</p>
+  </div>
+</li></a>
+<hr />
+<li
+  class="dropdown-item p-1 rounded d-flex align-items-center"
+  type="button"
+>
+  <i
+    class="fas fa-exclamation-circle bg-warning p-2 rounded-circle"
+  ></i>
+  <div class="ms-3">
+    <p class="m-0">Danos tu Opinión</p>
+    <p class="m-0 text-dark fs-7">
+      Ayúdanos a mejorar el nuevo ConComics.
+    </p>
+  </div>
+</li>
+<hr />
+<li class="dropdown-item p-1 my-3 rounded" type="button">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <div class="d-flex" data-bs-toggle="dropdown">
+        <i class="fas fa-cog bg-warning p-2 rounded-circle"></i>
+        <div
+          class="
+            ms-3
+            d-flex
+            justify-content-between
+            align-items-center
+            w-100
+          "
+        >
+          <p class="m-0">Ajustes & Privacidad</p>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+      <ul class="dropdown-menu bg-warning">
+        <li>
+          <a
+            class="dropdown-item d-flex align-items-center"
+            href="#"
+          >
+            <div
+              class="
+                rounded-circle
+                p-1
+                bg-danger
+                d-flex
+                align-items-center
+                justify-content-center
+                me-2
+              "
+              style="width: 38px; height: 38px"
+            >
+              <i class="fas fa-cog"></i>
+            </div>
+            <p class="m-0">Ajustes</p>
+          </a>
+        </li>
+        <li>
+          <a
+            class="dropdown-item d-flex align-items-center"
+            href="#"
+          >
+            <div
+              class="
+                rounded-circle
+                p-1
+                bg-danger
+                d-flex
+                align-items-center
+                justify-content-center
+                me-2
+              "
+              style="width: 38px; height: 38px"
+            >
+              <i class="fas fa-lock"></i>
+            </div>
+            <p class="m-0">Verificación de Privacidad</p>
+          </a>
+        </li>
+        <li>
+          <a
+            class="dropdown-item d-flex align-items-center"
+            href="#"
+          >
+            <div
+              class="
+                rounded-circle
+                p-1
+                bg-danger
+                d-flex
+                align-items-center
+                justify-content-center
+                me-2
+              "
+              style="width: 38px; height: 38px"
+            >
+              <i class="fas fa-unlock-alt"></i>
+            </div>
+            <p class="m-0">Atajos de Seguridad</p>
+          </a>
+        </li>
+        <li>
+          <a
+            class="dropdown-item d-flex align-items-center"
+            href="#"
+          >
+            <div
+              class="
+                rounded-circle
+                p-1
+                bg-danger
+                d-flex
+                align-items-center
+                justify-content-center
+                me-2
+              "
+              style="width: 38px; height: 38px"
+            >
+              <i class="fas fa-list"></i>
+            </div>
+            <p class="m-0">Registros de Actividades</p>
+          </a>
+        </li>
+        <li>
+          <a
+            class="dropdown-item d-flex align-items-center"
+            href="#"
+          >
+            <div
+              class="
+                rounded-circle
+                p-1
+                bg-danger
+                d-flex
+                align-items-center
+                justify-content-center
+                me-2
+              "
+              style="width: 38px; height: 38px"
+            >
+              <i class="fas fa-newspaper"></i>
+            </div>
+            <p class="m-0">preferencias de suministro de noticias</p>
+          </a>
+        </li>
+        <li>
+          <a
+            class="dropdown-item d-flex align-items-center"
+            href="#"
+          >
+            <div
+              class="
+                rounded-circle
+                p-1
+                bg-danger
+                d-flex
+                align-items-center
+                justify-content-center
+                me-2
+              "
+              style="width: 38px; height: 38px"
+            >
+              <i class="fas fa-globe"></i>
+            </div>
+            <p class="m-0">Idioma</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</li>
+<li class="dropdown-item p-1 my-3 rounded" type="button">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <div class="d-flex" data-bs-toggle="dropdown">
+        <i
+          class="
+            fas
+            fa-question-circle
+            bg-warning
+            p-2
+            rounded-circle
+          "
+        ></i>
+        <div
+          class="
+            ms-3
+            d-flex
+            justify-content-between
+            align-items-center
+            w-100
+          "
+        >
+          <p class="m-0">Ayuda & Soporte</p>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+      <ul class="dropdown-menu bg-warning" >
+        <li>
+          <a
+            class="dropdown-item d-flex align-items-center"
+            href="#"
+          >
+            <div
+              class="
+                rounded-circle
+                p-1
+                bg-danger
+                d-flex
+                align-items-center
+                justify-content-center
+                me-2
+              "
+              style="width: 38px; height: 38px"
+            >
+              <i class="fas fa-cog"></i>
+            </div>
+            <p class="m-0">Ajustes</p>
+          </a>
+        </li>
+        <li>
+          <a
+            class="dropdown-item d-flex align-items-center"
+            href="#"
+          >
+            <div
+              class="
+                rounded-circle
+                p-1
+                bg-danger
+                d-flex
+                align-items-center
+                justify-content-center
+                me-2
+              "
+              style="width: 38px; height: 38px"
+            >
+              <i class="fas fa-lock"></i>
+            </div>
+            <p class="m-0">Verificación de Privacidad</p>
+          </a>
+        </li>
+        <li>
+          <a
+            class="dropdown-item d-flex align-items-center"
+            href="#"
+          >
+            <div
+              class="
+                rounded-circle
+                p-1
+                bg-danger
+                d-flex
+                align-items-center
+                justify-content-center
+                me-2
+              "
+              style="width: 38px; height: 38px"
+            >
+              <i class="fas fa-unlock-alt"></i>
+            </div>
+            <p class="m-0">Atajos de Privacidad</p>
+          </a>
+        </li>
+        <li>
+          <a
+            class="dropdown-item d-flex align-items-center"
+            href="#"
+          >
+            <div
+              class="
+                rounded-circle
+                p-1
+                bg-danger
+                d-flex
+                align-items-center
+                justify-content-center
+                me-2
+              "
+              style="width: 38px; height: 38px"
+            >
+              <i class="fas fa-list"></i>
+            </div>
+            <p class="m-0">Registro de Actividades</p>
+          </a>
+        </li>
+        <li>
+          <a
+            class="dropdown-item d-flex align-items-center"
+            href="#"
+          >
+            <div
+              class="
+                rounded-circle
+                p-1
+                bg-danger
+                d-flex
+                align-items-center
+                justify-content-center
+                me-2
+              "
+              style="width: 38px; height: 38px"
+            >
+              <i class="fas fa-newspaper"></i>
+            </div>
+            <p class="m-0">Preferencias del Suministro de Noticias</p>
+          </a>
+        </li>
+        <li>
+          <a
+            class="dropdown-item d-flex align-items-center"
+            href="#"
+          >
+            <div
+              class="
+                rounded-circle
+                p-1
+                bg-danger
+                d-flex
+                align-items-center
+                justify-content-center
+                me-2
+              "
+              style="width: 38px; height: 38px"
+            >
+              <i class="fas fa-globe"></i>
+            </div>
+            <p class="m-0">Idioma</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</li>
+<li class="dropdown-item p-1 my-3 rounded" type="button">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <div class="d-flex" data-bs-toggle="dropdown">
+        <i class="fas fa-moon bg-warning p-2 rounded-circle"></i>
+        <div
+          class="
+            ms-3
+            d-flex
+            justify-content-between
+            align-items-center
+            w-100
+          "
+        >
+          <p class="m-0">Visualización & Accesibilidad</p>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+      <ul class="dropdown-menu bg-warning">
+        <li>
+          <a
+            class="dropdown-item d-flex align-items-center"
+            href="#"
+          >
+            <div
+              class="
+                rounded-circle
+                p-1
+                bg-danger
+                d-flex
+                align-items-center
+                justify-content-center
+                me-2
+              "
+              style="width: 38px; height: 38px"
+            >
+              <i class="fas fa-cog"></i>
+            </div>
+            <p class="m-0">Ajustes</p>
+          </a>
+        </li>
+        <li>
+          <a
+            class="dropdown-item d-flex align-items-center"
+            href="#"
+          >
+            <div
+              class="
+                rounded-circle
+                p-1
+                bg-danger
+                d-flex
+                align-items-center
+                justify-content-center
+                me-2
+              "
+              style="width: 38px; height: 38px"
+            >
+              <i class="fas fa-lock"></i>
+            </div>
+            <p class="m-0">Verificación de Seguridad</p>
+          </a>
+        </li>
+        <li>
+          <a
+            class="dropdown-item d-flex align-items-center"
+            href="#"
+          >
+            <div
+              class="
+                rounded-circle
+                p-1
+                bg-danger
+                d-flex
+                align-items-center
+                justify-content-center
+                me-2
+              "
+              style="width: 38px; height: 38px"
+            >
+              <i class="fas fa-unlock-alt"></i>
+            </div>
+            <p class="m-0">Atajos de Privacidad</p>
+          </a>
+        </li>
+        <li>
+          <a
+            class="dropdown-item d-flex align-items-center"
+            href="#"
+          >
+            <div
+              class="
+                rounded-circle
+                p-1
+                bg-danger
+                d-flex
+                align-items-center
+                justify-content-center
+                me-2
+              "
+              style="width: 38px; height: 38px"
+            >
+              <i class="fas fa-list"></i>
+            </div>
+            <p class="m-0">Registro de Actividades</p>
+          </a>
+        </li>
+        <li>
+          <a
+            class="dropdown-item d-flex align-items-center"
+            href="#"
+          >
+            <div
+              class="
+                rounded-circle
+                p-1
+                bg-danger
+                d-flex
+                align-items-center
+                justify-content-center
+                me-2
+              "
+              style="width: 38px; height: 38px"
+            >
+              <i class="fas fa-newspaper"></i>
+            </div>
+            <p class="m-0">Preferencias del Suministro de Noticias</p>
+          </a>
+        </li>
+        <li>
+          <a
+            class="dropdown-item d-flex align-items-center"
+            href="#"
+          >
+            <div
+              class="
+                rounded-circle
+                p-1
+                bg-danger
+                d-flex
+                align-items-center
+                justify-content-center
+                me-2
+              "
+              style="width: 38px; height: 38px"
+            >
+              <i class="fas fa-globe"></i>
+            </div>
+            <p class="m-0">Idioma</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</li> <div class="d-flex">
+  
+</div>
+<li class="dropdown-item p-1 my-3 rounded" type="button">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+        <i class="fas fa-cog bg-warning p-2 rounded-circle"></i>
+        <div
+          class="
+            ms-3
+            d-flex
+            justify-content-between
+            align-items-center
+            w-100
+          "
+        >
+          <p class="m-0"><button id="logout" class="btn btn-outline" style="margin-top: -60px; margin-left: 10px;">Salir</button></p>
+        </div>
+    </li>
+  </ul>
+</li>
+</ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row justify-content-evenly ">
+      <div class="col-12 col-lg-3 ">
+        <div
+          class="d-none d-xxl-block h-100 fixed-top overflow-hidden scrollbar "
+          style="max-width: 360px; width: 100%; z-index: 4"
+        >
+          <ul
+            class="navbar-nav mt-4 ms-3 d-flex flex-column pb-5 mb-5 "
+            style="padding-top: 56px"
+          >
+            <li class="dropdown-item p-1 rounded">
+              <a
+                href="#"
+                class="
+                  d-flex
+                  align-items-center
+                  text-decoration-none text-dark
+                "
+              >
+                <div class="p-2">
+                  <img
+                    src="https://source.unsplash.com/collection/happy-people"
+                    alt="avatar"
+                    class="rounded-circle me-2"
+                    style="width: 38px; height: 38px; object-fit: cover"
+                  />
+                </div>
+                <div>
+                  <p class="m-0">Aslan</p>
+                </div>
+              </a>
+            </li>
+            <li class="dropdown-item p-1 rounded">
+              <a
+                href="#"
+                class="
+                  d-flex
+                  align-items-center
+                  text-decoration-none text-dark
+                "
+              >
+                <div class="p-2">
+                  <img
+                    src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/tSXYIzZlfrS.png"
+                    alt="from fb"
+                    class="rounded-circle"
+                    style="width: 38px; height: 38px; object-fit: cover"
+                  />
+                </div>
+                <div>
+                  <p class="m-0">Amigos</p>
+                </div>
+              </a>
+            </li>
+            <li class="dropdown-item p-1 rounded">
+              <a
+                href="#"
+                class="
+                  d-flex
+                  align-items-center
+                  text-decoration-none text-dark
+                "
+              >
+                <div class="p-2">
+                  <img
+                    src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/Im_0d7HFH4n.png"
+                    alt="from fb"
+                    class="rounded-circle"
+                    style="width: 38px; height: 38px; object-fit: cover"
+                  />
+                </div>
+                <div>
+                  <p class="m-0">Grupos</p>
+                  <i
+                    class="fas fa-circle text-primary"
+                    style="font-size: 0.5rem !important"
+                  ></i>
+                  <span class="fs-7 text-primary"> 1 nuevo</span>
+                </div>
+              </a>
+            </li>
+            <li class="dropdown-item p-1">
+              <a
+                href="#"
+                class="
+                  d-flex
+                  align-items-center
+                  justify-content-between
+                  text-decoration-none text-dark
+                "
+              >
+                <div class="d-flex align-items-center justify-content-evenly">
+                  <div class="p-2">
+                    <img
+                      src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/0gH3vbvr8Ee.png"
+                      alt="from fb"
+                      class="rounded-circle"
+                      style="width: 38px; height: 38px; object-fit: cover"
+                    />
+                  </div>
+                  <div>
+                    <p class="m-0">Paginas</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="dropdown-item p-1">
+              <a
+                href="#"
+                class="
+                  d-flex
+                  align-items-center
+                  justify-content-between
+                  text-decoration-none text-dark
+                "
+              >
+                <div class="d-flex align-items-center justify-content-evenly">
+                  <div class="p-2">
+                    <img
+                      src="https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/MN44Sm-CTHN.png"
+                      alt="from fb"
+                      class="rounded-circle"
+                      style="width: 38px; height: 38px; object-fit: cover"
+                    />
+                  </div>
+                  <div>
+                    <p class="m-0">Marketplace</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="dropdown-item p-1">
+              <a
+                href="#"
+                class="
+                  d-flex
+                  align-items-center
+                  justify-content-between
+                  text-decoration-none text-dark
+                "
+              >
+                <div class="d-flex align-items-center justify-content-evenly">
+                  <div class="p-2">
+                    <img
+                      src="https://static.xx.fbcdn.net/rsrc.php/v3/y-/r/FhOLTyUFKwf.png"
+                      alt="from fb"
+                      class="rounded-circle"
+                      style="width: 38px; height: 38px; object-fit: cover"
+                    />
+                  </div>
+                  <div>
+                    <p class="m-0">Mira</p>
+                    <i
+                      class="fas fa-circle text-primary"
+                      style="font-size: 0.5rem !important"
+                    ></i>
+                    <span class="fs-7 text-primary"> 9+ nuevos videos</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="p-1" type="button">
+              <div id="accordionFlushExample">
+                <div>
+                  <div
+                    class="d-flex align-items-center"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    <div class="p-2">
+                      <i
+                        class="fas fa-chevron-down rounded-circle p-2"
+                        style="background-color: #d5d5d5 !important"
+                      ></i>
+                    </div>
+                    <div>
+                      <p class="m-0">Ver Más</p>
+                    </div>
+                  </div>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div>
+                      <div
+                        class="
+                          d-flex
+                          align-items-center
+                          dropdown-item
+                          p-0
+                          m-0
+                        "
+                      >
+                        <div class="p-2">
+                          <img
+                            src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/Y7r38CcFEw5.png"
+                            alt="from fb"
+                            class="rounded-circle"
+                            style="
+                              width: 38px;
+                              height: 38px;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                        <div>
+                          <p class="m-0">Campo</p>
+                        </div>
+                      </div>
+                      <div
+                        class="
+                          d-flex
+                          align-items-center
+                          dropdown-item
+                          p-0
+                          m-0
+                        "
+                      >
+                        <div class="p-2">
+                          <img
+                            src="https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/N7UOh8REweU.png"
+                            alt="from fb"
+                            class="rounded-circle"
+                            style="
+                              width: 38px;
+                              height: 38px;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                        <div>
+                          <p class="m-0">Events</p>
+                        </div>
+                      </div>
+                      <!-- item 3 -->
+                      <div
+                        class="
+                          d-flex
+                          align-items-center
+                          dropdown-item
+                          p-0
+                          m-0
+                        "
+                      >
+                        <div class="p-2">
+                          <img
+                            src="https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/hLkEFzsCyXC.png"
+                            alt="from fb"
+                            class="rounded-circle"
+                            style="
+                              width: 38px;
+                              height: 38px;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                        <div>
+                          <p class="m-0">Newsfeed</p>
+                        </div>
+                      </div>
+                      <!-- end -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <hr class="m-0" />
+            <!-- shortcuts -->
+            <!-- heading -->
+            <div
+              class="
+                d-flex
+                justify-content-between
+                align-items-center
+                mt-2
+                text-muted
+                edit-heading
+              "
+            >
+              <h4 class="m-0 pointer">Your Shorcuts</h4>
+              <p
+                class="m-0 text-primary me-3 pointer edit-button"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#shortCutModal"
+              >
+                Edit
+              </p>
+              <!-- modal -->
+              <div
+                class="modal fade"
+                id="shortCutModal"
+                tabindex="-1"
+                aria-labelledby="shortCutModalLabel"
+                aria-hidden="true"
+                data-bs-backdrop="false"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <!-- head -->
+                    <div class="modal-header align-items-center">
+                      <h5
+                        class="text-dark text-center w-100 m-0"
+                        id="exampleModalLabel"
+                      >
+                        Edit Your ShortCuts
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <!-- body -->
+                    <div class="modal-body">
+                      <p class="text-muted">
+                        Shortcuts provide quick access to what you do most on
+                        Facebook. Your Shortcuts are sorted automatically, but
+                        you can pin something so it's always shown at the top
+                        or hide it from the list.
+                      </p>
+                      <!-- Search -->
+                      <div class="p-1">
+                        <div
+                          class="
+                            input-group-text
+                            bg-gray
+                            border-0
+                            rounded-pill
+                          "
+                          style="min-height: 40px; min-width: 230px"
+                        >
+                          <i class="fas fa-search me-2 text-muted"></i>
+                          <input
+                            type="text"
+                            class="form-control rounded-pill border-0 bg-gray"
+                            placeholder="Search your Pages, groups, games, and events"
+                          />
+                        </div>
+                      </div>
+                      <!-- short-1 -->
+                      <li class="my-1 p-1">
+                        <div
+                          class="
+                            d-flex
+                            align-items-center
+                            justify-content-between
+                            text-decoration-none text-dark
+                          "
+                        >
+                          <div
+                            class="
+                              d-flex
+                              align-items-center
+                              justify-content-evenly
+                            "
+                          >
+                            <div class="p-2">
+                              <img
+                                src="https://source.unsplash.com/random/1"
+                                alt="from fb"
+                                class="
+                                  rounded
+                                  border border-1 border-secondary
+                                "
+                                style="
+                                  width: 38px;
+                                  height: 38px;
+                                  object-fit: cover;
+                                "
+                              />
+                            </div>
+                            <div>
+                              <p class="m-0">Lorem Ipsum</p>
+                            </div>
+                          </div>
+                          <select
+                            class="form-select w-50 border-0 bg-gray"
+                            aria-label="Default select example"
+                          >
+                            <option selected value="1">
+                              Short Automatically
+                            </option>
+                            <option value="2">Pin To Top</option>
+                            <option value="3">Hide</option>
+                          </select>
+                        </div>
+                      </li>
+                      <!-- short-2 -->
+                      <li class="my-1 p-1">
+                        <div
+                          class="
+                            d-flex
+                            align-items-center
+                            justify-content-between
+                            text-decoration-none text-dark
+                          "
+                        >
+                          <div
+                            class="
+                              d-flex
+                              align-items-center
+                              justify-content-evenly
+                            "
+                          >
+                            <div class="p-2">
+                              <img
+                                src="https://source.unsplash.com/random/2"
+                                alt="from fb"
+                                class="
+                                  rounded
+                                  border border-1 border-secondary
+                                "
+                                style="
+                                  width: 38px;
+                                  height: 38px;
+                                  object-fit: cover;
+                                "
+                              />
+                            </div>
+                            <div>
+                              <p class="m-0">Lorem Ipsum</p>
+                            </div>
+                          </div>
+                          <select
+                            class="form-select w-50 border-0 bg-gray"
+                            aria-label="Default select example"
+                          >
+                            <option selected value="1">
+                              Short Automatically
+                            </option>
+                            <option value="2">Pin To Top</option>
+                            <option value="3">Hide</option>
+                          </select>
+                        </div>
+                      </li>
+                      <!-- short-3 -->
+                      <li class="my-1 p-1">
+                        <div
+                          class="
+                            d-flex
+                            align-items-center
+                            justify-content-between
+                            text-decoration-none text-dark
+                          "
+                        >
+                          <div
+                            class="
+                              d-flex
+                              align-items-center
+                              justify-content-evenly
+                            "
+                          >
+                            <div class="p-2">
+                              <img
+                                src="https://source.unsplash.com/random/3"
+                                alt="from fb"
+                                class="
+                                  rounded
+                                  border border-1 border-secondary
+                                "
+                                style="
+                                  width: 38px;
+                                  height: 38px;
+                                  object-fit: cover;
+                                "
+                              />
+                            </div>
+                            <div>
+                              <p class="m-0">Lorem Ipsum</p>
+                            </div>
+                          </div>
+                          <select
+                            class="form-select w-50 border-0 bg-gray"
+                            aria-label="Default select example"
+                          >
+                            <option selected value="1">
+                              Short Automatically
+                            </option>
+                            <option value="2">Pin To Top</option>
+                            <option value="3">Hide</option>
+                          </select>
+                        </div>
+                      </li>
+                      <!-- end -->
+                    </div>
+                    <!-- footer -->
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-light text-primary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+            </div>
+            <!-- short 1 -->
+            <li class="dropdown-item p-1">
+              <a
+                href="#"
+                class="
+                  d-flex
+                  align-items-center
+                  text-decoration-none text-dark
+                "
+              >
+                <div class="p-2">
+                  <img
+                    src="https://source.unsplash.com/random/1"
+                    alt="from fb"
+                    class="rounded border border-1 border-secondary"
+                    style="width: 38px; height: 38px; object-fit: cover"
+                  />
+                </div>
+                <div>
+                  <p class="m-0">Lorem Ipsum</p>
+                </div>
+              </a>
+            </li>
+            <!-- short-2 -->
+            <li class="dropdown-item p-1">
+              <a
+                href=""
+                class="
+                  d-flex
+                  align-items-center
+                  text-decoration-none text-dark
+                "
+              >
+                <div class="p-2">
+                  <img
+                    src="https://source.unsplash.com/random/2"
+                    alt="from fb"
+                    class="rounded border border-1 border-secondary"
+                    style="width: 38px; height: 38px; object-fit: cover"
+                  />
+                </div>
+                <div>
+                  <p class="m-0">Lorem Ipsum</p>
+                </div>
+              </a>
+            </li>
+            <!-- short-3 -->
+            <li class="dropdown-item p-1">
+              <a
+                href=""
+                class="
+                  d-flex
+                  align-items-center
+                  text-decoration-none text-dark
+                "
+              >
+                <div class="p-2">
+                  <img
+                    src="https://source.unsplash.com/random/3"
+                    alt="from fb"
+                    class="rounded border border-1 border-secondary"
+                    style="width: 38px; height: 38px; object-fit: cover"
+                  />
+                </div>
+                <div>
+                  <p class="m-0">Lorem Ipsum</p>
+                </div>
+              </a>
+            </li>
+            <!-- see more -->
+            <li class="p-1" type="button">
+              <div id="accordionFlushExample">
+                <div>
+                  <!-- see more button -->
+                  <div
+                    class="d-flex align-items-center"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#shortModal"
+                    aria-expanded="false"
+                    aria-controls="shortModal"
+                  >
+                    <div class="p-2">
+                      <i
+                        class="fas fa-chevron-down rounded-circle p-2"
+                        style="background-color: #d5d5d5 !important"
+                      ></i>
+                    </div>
+                    <div>
+                      <p class="m-0">See More</p>
+                    </div>
+                  </div>
+                  <!-- content -->
+                  <div
+                    id="shortModal"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div>
+                      <!-- item 1 -->
+                      <div
+                        class="
+                          d-flex
+                          align-items-center
+                          dropdown-item
+                          p-0
+                          m-0
+                        "
+                      >
+                        <div class="p-2">
+                          <img
+                            src="https://source.unsplash.com/random/4"
+                            alt="from fb"
+                            class="rounded border border-1 border-secondary"
+                            style="
+                              width: 38px;
+                              height: 38px;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                        <div>
+                          <p class="m-0">Campus</p>
+                        </div>
+                      </div>
+                      <!-- item 2 -->
+                      <div
+                        class="
+                          d-flex
+                          align-items-center
+                          dropdown-item
+                          p-0
+                          m-0
+                        "
+                      >
+                        <div class="p-2">
+                          <img
+                            src="https://source.unsplash.com/random/5"
+                            alt="from fb"
+                            class="rounded border border-1 border-secondary"
+                            style="
+                              width: 38px;
+                              height: 38px;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                        <div>
+                          <p class="m-0">Events</p>
+                        </div>
+                      </div>
+                      <div
+                        class="
+                          d-flex
+                          align-items-center
+                          dropdown-item
+                          p-0
+                          m-0
+                        "
+                      >
+                        <div class="p-2">
+                          <img
+                            src="https://source.unsplash.com/random/6"
+                            alt="from fb"
+                            class="rounded border border-1 border-secondary"
+                            style="
+                              width: 38px;
+                              height: 38px;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                        <div>
+                          <p class="m-0">Newsfeed</p>
+                        </div>
+                      </div>
+               
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="p-2 mt-5">
+            <p class="text-muted fs-7">
+              Privacy &#8226; Terms &#8226; Advertising &#8226; Ad Choices
+              &#8226; Cookies &#8226; ComComics © 2022
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 pb-5 margin-top" style="margin-top: -30px;">
+        <div
+          class="d-flex flex-column justify-content-center w-100 mx-auto"
+          style="padding-top: 56px; max-width: 680px"
+        >
+          <div class="mt-5 d-flex justify-content-between position-relative bg-transparent">
+  
+            <div
+              class="mx-1 bg-danger rounded story "
+              type="button"
+              style="width: 6em; height: 190px"
+            >
+              <img
+                src="12-angels-600x600.jpg"
+                class="card-img-top"
+                alt="story posts"
+                style="min-height: 125px; object-fit: cover"
+              />
+              <div
+                class="
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  position-relative
+                "
+                style="min-height: 65px"
+              >
+                <p class="mb-0 text-center fs-7 fw-bold">Crea una Historia</p>
+                <div
+                  class="position-absolute top-0 start-50 translate-middle"
+                >
+                  <i
+                    class="
+                      fas
+                      fa-plus-circle
+                      fs-3
+                      text-dark
+                      bg-danger
+                      p-1
+                      rounded-circle
+                    "
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded mx-1 story"
+              type="button"
+              style="width: 6em; height: 190px"
+            >
+              <img
+                src="Captura de pantalla (632).png"
+                class="card-img-top rounded"
+                alt="story posts"
+                style="min-height: 190px; object-fit: cover"
+              />
+            </div>
+            <div
+              class="rounded mx-1 story"
+              type="button"
+              style="width: 6em; height: 190px"
+            >
+              <img
+                src="ddd.jpg"
+                class="card-img-top rounded"
+                alt="story posts"
+                style="min-height: 190px; object-fit: cover"
+              />
+            </div>
+            <div
+              class="rounded mx-1 story"
+              type="button"
+              style="width: 6em; height: 190px"
+            >
+              <img
+                src="dorian.jpg"
+                class="card-img-top rounded"
+                alt="story posts"
+                style="min-height: 190px; object-fit: cover"
+              />
+            </div>
+            <div
+              class="d-none d-lg-block rounded mx-1 story"
+              type="button"
+              style="width: 6em; height: 190px"
+            >
+              <img
+                src="Crew-Neck-Jumper-Intarsia-20201225013625.jpg"
+                class="card-img-top rounded"
+                alt="story posts"
+                style="min-height: 190px; object-fit: cover"
+              />
+            </div>
+            <div
+              class="d-none d-lg-block rounded mx-1 story"
+              type="button"
+              style="width: 6em; height: 190px"
+            >
+              <img
+                src="Ojhmiz.jpg"
+                class="card-img-top rounded"
+                alt="story posts"
+                style="min-height: 190px; object-fit: cover"
+              />
+            </div>
+            <div
+              class="
+                position-absolute
+                top-50
+                start-100
+                translate-middle
+                pointer
+                d-none d-lg-block
+              "
+            >
+              <i
+                class="
+                  fas
+                  fa-arrow-right
+                  p-3
+                  border-danger
+                  text-dark
+                  bg-danger
+                  rounded-circle
+                "
+              ></i>
+            </div>
+          </div>
+          <div class="bg-warning p-3 mt-3 rounded border-warning shadow">
+          
+            <div class="d-flex" type="button">
+              <div class="p-1">
+                <img
+                  src="https://i.pinimg.com/564x/69/cb/b2/69cbb22f94b0329f438d965234de81a4.jpg"
+                  alt="avatar"
+                  class="rounded-circle me-2"
+                  style="width: 48px; height: 48px; object-fit: cover"
+                />
+              </div>
+              <input
+                type="text"
+                class="form-control rounded-pill border-0 bg-gray pointer"
+                disabled
+                placeholder="En Qué Piensas Aslan...?"
+                data-bs-toggle="modal"
+                data-bs-target="#createModal"
+              />
+            </div>
+            <div
+            class="modal fade"
+            id="createModal"
+            tabindex="-1"
+            aria-labelledby="createModalLabel"
+            aria-hidden="true"
+            data-bs-backdrop="false"
+          >
+            <div class="modal-dialog   modal-dialog-centered">
+              <div class="modal-content ">
+                <div class="modal-header align-items-center">
+                  <h5
+                    class="text-dark text-center w-100 m-0"
+                    id="exampleModalLabel"
+                  >
+                    Postea Algo
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="my-1 p-1">
+                    <div class="d-flex flex-column">
+                      <div class="d-flex align-items-center">
+                        <div class="p-2">
+                          <img
+                            src="https://i.pinimg.com/564x/69/cb/b2/69cbb22f94b0329f438d965234de81a4.jpg#"
+                            alt="from fb"
+                            class="rounded-circle"
+                            style="
+                              width: 38px;
+                              height: 38px;
+                              object-fit: cover;
+                            "
+                          />
+                        </div>
+                        <div>
+                          <p class="m-0 fw-bold">Aslan</p>
+                          <select
+                            class="form-select border-0 bg-gray w-85 fs-7"
+                            aria-label="Default select example"
+                          >
+                            <option selected value="1">Publico</option>
+                            <option value="2">Publicar Arriba</option>
+                            <option value="3">Oculto</option>
+                          </select>
+                        </div>
+                      </div>
+                          <div class="card bg-transparent" id="contenidoWeb"
+                          style="border-radius: 1rem; border-color: transparent; margin-left: -11px; width:480px;">
+                          <div class="card-body">
+             <form id="postForm" action="">
+             <div class="form-outline form-white mb-4">
+             <textarea class="form-control form-control-lg"
+             style="border-color:transparent;" 
+             id="postText" rows="3"></textarea>
+             </div>
+                      <div
+                        class="
+                          d-flex
+                          justify-content-between
+                          align-items-center
+                        "
+                      >
+                        <img
+                          src="https://www.facebook.com/images/composer/SATP_Aa_square-2x.png"
+                          class="pointer"
+                          alt="fb text"
+                          style="
+                            width: 30px;
+                            height: 30px;
+                            object-fit: cover;
+                          "
+                        />
+                        <i
+                          class="far fa-laugh-wink fs-5 text-muted pointer"
+                        ></i>
+                      </div>
+                      <div
+                        class="
+                          d-flex
+                          justify-content-between
+                          border border-1 border-light
+                          rounded
+                          p-3
+                          mt-3
+                        "
+                      >
+                        <p class="m-0">Añade a tu Publicación</p>
+                        <div>
+                            <a class="button" href="#popup1">
+                              <i class="fas fa-images fs-5 text-dark pointer mx-1 "></i>
+                          </a>
+                          
+                          <div id="popup1" class="overlay">
+                            <div class="popup">
+                              <a class="close" href="#">&times;</a>
+                              <div class="content " style="width: min-content;">
+                                <input type="file" id="image_input">
+                            
+                                <div id="display_image"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <i
+                            class="
+                              fas
+                              fa-user-check
+                              fs-5
+                              text-primary
+                              pointer
+                              mx-1
+                            "
+                          ></i>
+                          <i
+                            class="
+                              far
+                              fa-smile
+                              fs-5
+                              text-warning
+                              pointer
+                              mx-1
+                            "
+                          ></i>
+                          <i
+                            class="
+                              fas
+                              fa-map-marker-alt
+                              fs-5
+                              text-info
+                              pointer
+                              mx-1
+                            "
+                          ></i>
+                          <i
+                            class="
+                              fas
+                              fa-microphone
+                              fs-5
+                              text-danger
+                              pointer
+                              mx-1
+                            "
+                          ></i>
+                          <i
+                            class="
+                              fas
+                              fa-ellipsis-h
+                              fs-5
+                              text-muted
+                              pointer
+                              mx-1
+                            "
+                          ></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+                
+             <button id="btnSendPost" class="btn btn-outline btn btn-danger w-100 btn-lg px-5" type="submit">  Publicar</button>
+          </form>
+                      </div>
+                       </div>
+                       <div id="postList">
+                       </div> 
+              </div>
+            </div>
+          </div>
+            <hr />
+            <div class="d-flex flex-column flex-lg-row mt-3 ">
+              
+              <div
+                class="
+                  dropdown-item
+                  rounded
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                "
+                type="button"
+              >
+                <i class="fas fa-video me-2 text-danger"></i>
+                <p class="m-0 text-dark">Video en Vivo</p>
+              </div>
+              <div
+                class="
+                  dropdown-item
+                  rounded
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                "
+                type="button"
+              >
+                
+                <i class="fas fa-photo-video me-2 text-success"></i>
+                
+                <p class="m-0 text-dark">Foto/Video</p>
+              </div>
+              <div
+                class="
+                  dropdown-item
+                  rounded
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                "
+                type="button"
+              >
+                <i class="fas fa-smile me-2 text-dark"></i>
+                <p class="m-0 text-dark">Sentimiento/Actividad</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              bg-warning
+              p-3
+              mt-3
+              rounded
+              border-warning
+              shadow
+              d-flex
+              justify-content-between
+              position-relative
+            "
+          >
+            <div class="bg-warning">
+              <button class="btn rounded-pill btn-info">
+                <i class="fas fa-video me-3"></i>Crea una Sala
+              </button>
+            </div>
+            <div class="d-xxl-none">
+              <img
+                src="Inked121190693_385074986002324_3069856261020130767_n_LI.jpg"
+                alt="avatar"
+                class="rounded-circle me-2"
+                style="width: 48px; height: 48px; object-fit: cover"
+              />
+              <img
+                src="133221915a7feb8e54c94acbf20dcd5b.jpg"
+                alt="avatar"
+                class="rounded-circle me-2"
+                style="width: 48px; height: 48px; object-fit: cover"
+              />
+              <img
+                src="56de84df08967e6e1b41ed81615fcc35.jpg"
+                alt="avatar"
+                class="rounded-circle me-2"
+                style="width: 48px; height: 48px; object-fit: cover"
+              />
+              <img
+                src="9e6123e27bd3cf2f04463070220f7d7d.jpg"
+                alt="avatar"
+                class="rounded-circle me-2"
+                style="width: 48px; height: 48px; object-fit: cover"
+              />
+            </div>
+            <div
+              class="
+                position-absolute
+                start-0
+                top-50
+                translate-middle
+                d-none d-xxl-block
+              "
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <div
+                class="
+                  p-2
+                  bg-warning
+                  border
+                  rounded-circle
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                  pointer
+                  story
+                "
+                style="width: 30px; height: 30px"
+              >
+                <i class="fas fa-chevron-left text-muted"></i>
+              </div>
+            </div>
+
+            <div
+              class="
+                position-absolute
+                start-100
+                top-50
+                translate-middle
+                d-none d-xxl-block
+              "
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <div
+                class="
+                  p-2
+                  bg-white
+                  border
+                  rounded-circle
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                  pointer
+                  story
+                "
+                style="width: 30px; height: 30px"
+              >
+                <i class="fas fa-chevron-right text-muted"></i>
+              </div>
+            </div>
+          </div>
+          <div class="bg-warning p-4 rounded shadow mt-3">
+         
+            <div class="d-flex justify-content-between">
+          
+              <div class="d-flex">
+                <img
+                  src="tumblr_08902d99a985591e1ef8e21fe7a9d761_2a239319_500.jpg"
+                  alt="avatar"
+                  class="rounded-circle me-2"
+                  style="width: 48px; height: 48px; object-fit: cover"
+                />
+                <div>
+                  <p class="m-0 fw-bold">John</p>
+                  <span class="text-dark fs-7">Julio 17  1:23 pm</span>
+                </div>
+              </div>
+              <i
+                class="fas fa-ellipsis-h"
+                type="button"
+                id="post1Menu"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              ></i>
+              <ul
+                class="dropdown-menu border-0 shadow bg-danger"
+                aria-labelledby="post1Menu"
+              >
+                <li class="d-flex align-items-center">
+                  <a
+                    class="
+                      dropdown-item
+                      d-flex
+                      justify-content-around
+                      align-items-center
+                      fs-7
+                    "
+                    href="#"
+                  >
+                    Editar Publicación </a
+                  >
+                </li>
+                <li class="d-flex align-items-center">
+                  <a
+                    class="
+                      dropdown-item
+                      d-flex
+                      justify-content-around
+                      align-items-center
+                      fs-7"
+                    href="#"
+                  > 
+                    Borrar Publicación</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="mt-3 ">
+              <div>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quae fuga incidunt consequatur tenetur doloremque officia
+                  corrupti provident tempore vitae labore?
+                </p>
+                <img
+                  src="k.jpg"
+                  alt="post image"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="post__comment  mt-3 position-relative ">
+             
+                <div
+                  class="
+                    d-flex
+                    align-items-center
+                    top-0
+                    start-0
+                    position-absolute
+                  "
+                  style="height: 50px; z-index: 5"
+                >
+                  <div class="me-2 bg-warning">
+                    <i class="text-primary fas fa-thumbs-up"></i>
+                    <i class="text-danger fab fa-gratipay"></i>
+                    <i class="text-dark fas fa-grin-squint"></i>
+                  </div>
+                  <p class="m-0 text-muted fs-7">Phu, Tuan, y 3 Más</p>
+                </div>
+                <div class="accordion bg-warning" id="accordionExample">
+                  <div class="accordion-item bg-warning border-0">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <div
+                        class="
+                          accordion-button
+                          collapsed
+                          pointer
+                          bg-warning
+                          d-flex
+                          justify-content-end
+                        "
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsePost1"
+                        aria-expanded="false"
+                        aria-controls="collapsePost1"
+                      >
+                        <p style="margin-left: 430px;">2 Comentarios</p>
+                      </div>
+                    </h2>
+                    <hr />
+                    <div class="d-flex justify-content-around">
+                      <div
+                        class="
+                          dropdown-item
+                          rounded
+                          bg-warning
+                          d-flex
+                          justify-content-center
+                          align-items-center
+                          pointer
+                          text-dark
+                          p-1
+                        "
+                      >
+                        <i class="fas fa-thumbs-up me-3"></i>
+                        <p class="m-0">Me Gusta</p>
+                      </div>
+                      <div
+                        class="
+                          dropdown-item
+                          rounded
+                          d-flex
+                          justify-content-center
+                          align-items-center
+                          pointer
+                          text-dark
+                          p-1
+                        "
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsePost1"
+                        aria-expanded="false"
+                        aria-controls="collapsePost1"
+                      >
+                        <i class="fas fa-comment-alt me-3"></i>
+                        <p class="m-0">Comenta</p>
+                      </div>
+                    </div>
+                    <div
+                      id="collapsePost1"
+                      class="accordion-collapse bg-danger collapse"
+                      aria-labelledby="headingTwo"
+                      style="border-radius: 5px;"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <hr />
+                      <div class="accordion-body">
+                        <div class="d-flex align-items-center bg-dark my-1" style="border-radius: 5px;">
+                      
+                          <img
+                            src="Captura de pantalla (634).png"
+                            alt="avatar"
+                            class="rounded-circle me-2"
+                            style="
+                              width: 58px;
+                              height: 58px;
+                              margin-left: 10px;
+                              object-fit: cover;
+                            "
+                          />
+                          <div class="p-3 rounded comment__input w-100">
+                         
+                            <div class="d-flex justify-content-end">
+                        
+                              <i
+                                class="fas fa-ellipsis-h text-white pointer"
+                                id="post1CommentMenuButton"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              ></i>
+                              <ul
+                                class="dropdown-menu border-0 shadow"
+                                aria-labelledby="post1CommentMenuButton"
+                              >
+                                <li class="d-flex align-items-center">
+                                  <a
+                                    class="
+                                      dropdown-item
+                                      d-flex
+                                      justify-content-around
+                                      align-items-center
+                                      fs-7
+                                    "
+                                    href="#"
+                                  >
+                                    Editar Comentario</a
+                                  >
+                                </li>
+                                <li class="d-flex align-items-center">
+                                  <a
+                                    class="
+                                      dropdown-item
+                                      d-flex
+                                      justify-content-around
+                                      align-items-center
+                                      fs-7
+                                    "
+                                    href="#"
+                                  >
+                                    Borrar Comentario</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <p class="fw-bold text-white m-0">John</p>
+                            <p class="m-0 fs-7 p-2 rounded bg-warning">
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center my-1 bg-dark" style="border-radius: 5px;">
+                      
+                          <img
+                            src="Captura de pantalla (636).png"
+                            alt="avatar"
+                            class="rounded-circle me-2"
+                            style="
+                              width: 62px;
+                              height: 58px;
+                              margin-left: 10px;
+                              object-fit: cover;
+                            "
+                          />
+                          <div class="p-3 rounded comment__input w-100">
+                             
+                            <div class="d-flex justify-content-end">
+                        
+                              <i
+                                class="fas fa-ellipsis-h text-white pointer"
+                                id="post1CommentMenuButton"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              ></i>
+                              <ul
+                                class="dropdown-menu border-0 shadow"
+                                aria-labelledby="post1CommentMenuButton"
+                              >
+                                <li class="d-flex align-items-center">
+                                  <a
+                                    class="
+                                      dropdown-item
+                                      d-flex
+                                      justify-content-around
+                                      align-items-center
+                                      fs-7
+                                    "
+                                    href="#"
+                                  >
+                                    Editar Comentario</a
+                                  >
+                                </li>
+                                <li class="d-flex align-items-center">
+                                  <a
+                                    class="
+                                      dropdown-item
+                                      d-flex
+                                      justify-content-around
+                                      align-items-center
+                                      fs-7
+                                    "
+                                    href="#"
+                                  >
+                                    Borrar Comentario</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <p class="fw-bold text-white m-0">Jerry</p>
+                            <p class="m-0 fs-7 bg-warning p-2 rounded">
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit.
+                            </p>
+                          </div>
+                        </div>
+                        <form class="d-flex my-1">
+                          <div>
+                            <img
+                              src="https://i.pinimg.com/564x/69/cb/b2/69cbb22f94b0329f438d965234de81a4.jpg"
+                              alt="avatar"
+                              class="rounded-circle me-2"
+                              style="
+                                width: 48px;
+                                height:48px;
+                                object-fit: cover;
+                              "
+                            />
+                          </div>
+                          <input
+                            type="text"
+                            class="form-control border-0 rounded-pill bg-gray"
+                            placeholder="Escribe un Comentario"
+                          />
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-warning p-4 rounded shadow mt-3">
+          
+            <div class="d-flex justify-content-between">
+              <div class="d-flex">
+                <img
+                  src="Captura de pantalla (639).png"
+                  alt="avatar"
+                  class="rounded-circle me-2"
+                  style="width: 48px; height: 48px; object-fit: cover"
+                />
+                <div>
+                  <p class="m-0 fw-bold">Mike</p>
+                  <span class="text-dark fs-7">Mayo 24 1:23 pm</span>
+                </div>
+              </div>
+              <i
+              class="fas fa-ellipsis-h"
+              type="button"
+              id="post1Menu"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            ></i>
+            <ul
+              class="dropdown-menu border-0 shadow bg-danger"
+              aria-labelledby="post1Menu"
+            >
+              <li class="d-flex align-items-center">
+                <a
+                  class="
+                    dropdown-item
+                    d-flex
+                    justify-content-around
+                    align-items-center
+                    fs-7
+                  "
+                  href="#"
+                >
+                  Editar Publicación </a
+                >
+              </li>
+              <li class="d-flex align-items-center">
+                <a
+                  class="
+                    dropdown-item
+                    d-flex
+                    justify-content-around
+                    align-items-center
+                    fs-7"
+                  href="#"
+                > 
+                  Borrar Publicación</a
+                >
+              </li>
+            </ul>
+          </div>
+            <div class="mt-3">
+              <div>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quae fuga incidunt consequatur tenetur doloremque officia
+                  corrupti provident tempore vitae labore?
+                </p>
+                <img
+                  src="Vincent-van-Gogh-Starry-Night_1920x1200.jpg"
+                  alt="post image"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="post__comment mt-3 position-relative">
+             
+                <div
+                  class="
+                    d-flex
+                    align-items-center
+                    top-0
+                    start-0
+                    position-absolute
+                  "
+                  style="height: 50px; z-index: 5"
+                >
+                  <div class="me-2">
+                    <i class="text-primary fas fa-thumbs-up"></i>
+                    <i class="text-danger fab fa-gratipay"></i>
+                    <i class="text-dark fas fa-grin-squint"></i>
+                  </div>
+                  <p class="m-0 text-muted fs-7">Phu, Tuan, y 3 Más</p>
+                </div>
+                <div class="accordion bg-warning" id="accordionExample">
+                  <div class="accordion-item bg-warning border-0">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <div
+                        class="
+                          accordion-button
+                          collapsed
+                          pointer
+                          bg-warning
+                          d-flex
+                          justify-content-end
+                        "
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsePost1"
+                        aria-expanded="false"
+                        aria-controls="collapsePost1"
+                      >
+                        <p style="margin-left: 430px;">2 Comentarios</p>
+                      </div>
+                    </h2>
+                    <hr />
+                    <div class="d-flex justify-content-around">
+                      <div
+                        class="
+                          dropdown-item
+                          rounded
+                          bg-warning
+                          d-flex
+                          justify-content-center
+                          align-items-center
+                          pointer
+                          text-dark
+                          p-1
+                        "
+                      >
+                        <i class="fas fa-thumbs-up me-3"></i>
+                        <p class="m-0">Me Gusta</p>
+                      </div>
+                      <div
+                        class="
+                          dropdown-item
+                          rounded
+                          d-flex
+                          justify-content-center
+                          align-items-center
+                          pointer
+                          text-dark
+                          p-1
+                        "
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsePost1"
+                        aria-expanded="false"
+                        aria-controls="collapsePost1"
+                      >
+                        <i class="fas fa-comment-alt me-3"></i>
+                        <p class="m-0">Comenta</p>
+                      </div>
+                    </div>
+                    <div
+                      id="collapsePost1"
+                      class="accordion-collapse bg-danger collapse"
+                      aria-labelledby="headingTwo"
+                      style="border-radius: 5px;"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <hr />
+                      <div class="accordion-body">
+                        <div class="d-flex align-items-center bg-dark my-1" style="border-radius: 5px;">
+                      
+                          <img
+                            src="Captura de pantalla (634).png"
+                            alt="avatar"
+                            class="rounded-circle me-2"
+                            style="
+                              width: 58px;
+                              height: 58px;
+                              margin-left: 10px;
+                              object-fit: cover;
+                            "
+                          />
+                          <div class="p-3 rounded comment__input w-100">
+                         
+                            <div class="d-flex justify-content-end">
+                        
+                              <i
+                                class="fas fa-ellipsis-h text-white pointer"
+                                id="post1CommentMenuButton"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              ></i>
+                              <ul
+                                class="dropdown-menu border-0 shadow"
+                                aria-labelledby="post1CommentMenuButton"
+                              >
+                                <li class="d-flex align-items-center">
+                                  <a
+                                    class="
+                                      dropdown-item
+                                      d-flex
+                                      justify-content-around
+                                      align-items-center
+                                      fs-7
+                                    "
+                                    href="#"
+                                  >
+                                    Editar Comentario</a
+                                  >
+                                </li>
+                                <li class="d-flex align-items-center">
+                                  <a
+                                    class="
+                                      dropdown-item
+                                      d-flex
+                                      justify-content-around
+                                      align-items-center
+                                      fs-7
+                                    "
+                                    href="#"
+                                  >
+                                    Borrar Comentario</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <p class="fw-bold text-white m-0">John</p>
+                            <p class="m-0 fs-7 p-2 rounded bg-warning">
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center my-1 bg-dark" style="border-radius: 5px;">
+                      
+                          <img
+                            src="Captura de pantalla (636).png"
+                            alt="avatar"
+                            class="rounded-circle me-2"
+                            style="
+                              width: 62px;
+                              height: 58px;
+                              margin-left: 10px;
+                              object-fit: cover;
+                            "
+                          />
+                          <div class="p-3 rounded comment__input w-100">
+                             
+                            <div class="d-flex justify-content-end">
+                        
+                              <i
+                                class="fas fa-ellipsis-h text-white pointer"
+                                id="post1CommentMenuButton"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              ></i>
+                              <ul
+                                class="dropdown-menu border-0 shadow"
+                                aria-labelledby="post1CommentMenuButton"
+                              >
+                                <li class="d-flex align-items-center">
+                                  <a
+                                    class="
+                                      dropdown-item
+                                      d-flex
+                                      justify-content-around
+                                      align-items-center
+                                      fs-7
+                                    "
+                                    href="#"
+                                  >
+                                    Editar Comentario</a
+                                  >
+                                </li>
+                                <li class="d-flex align-items-center">
+                                  <a
+                                    class="
+                                      dropdown-item
+                                      d-flex
+                                      justify-content-around
+                                      align-items-center
+                                      fs-7
+                                    "
+                                    href="#"
+                                  >
+                                    Borrar Comentario</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <p class="fw-bold text-white m-0">Jerry</p>
+                            <p class="m-0 fs-7 bg-warning p-2 rounded">
+                              Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit.
+                            </p>
+                          </div>
+                        </div>
+                        <form class="d-flex my-1">
+                          <div>
+                            <img
+                              src="https://i.pinimg.com/564x/69/cb/b2/69cbb22f94b0329f438d965234de81a4.jpg"
+                              alt="avatar"
+                              class="rounded-circle me-2"
+                              style="
+                                width: 48px;
+                                height:48px;
+                                object-fit: cover;
+                              "
+                            />
+                          </div>
+                          <input
+                            type="text"
+                            class="form-control border-0 rounded-pill bg-gray"
+                            placeholder="Escribe un Comentario"
+                          />
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3">
+        <div
+          class="
+            d-none d-xxl-block
+            h-100
+            fixed-top
+            end-0
+            overflow-hidden
+            scrollbar
+          "
+          style="
+            max-width: 360px;
+            width: 100%;
+            z-index: 4;
+            padding-top: 56px;
+            left: initial !important;
+          "
+        >
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+  crossorigin="anonymous"
+></script>
+<script src="./main.js"></script>
+<script src="app.js"></script>
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+crossorigin="anonymous"
+></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+<script src="inicia.js"></script>
+
+    
+</body>
+</html>

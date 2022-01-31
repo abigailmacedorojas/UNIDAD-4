@@ -1,0 +1,1622 @@
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="javaScript/alertifyjs/css/themes/default.css">
+<link rel="stylesheet" type="text/css" href="javaScript/alertifyjs/css/alertify.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="javaScript/jquery-3.2.1.min.js"></script>
+<script src="javaScript/alertifyjs/alertify.js"></script>	
+<link rel="stylesheet" type="text/css" href="css/style_index.css">
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+  crossorigin="anonymous"
+/>
+<link rel="stylesheet" href="fed.css">
+<link rel="stylesheet" href="comic.css" />
+<link rel="stylesheet" href="estilos.css">
+<title>♠ ComComics ♠</title>
+</head>
+
+<style>
+    body{
+        background-image: url(https://static.vecteezy.com/system/resources/previews/001/978/612/non_2x/comic-style-red-background-with-cloud-free-vector.jpg);
+        background-size: 100%;
+    }
+    .img{
+        margin-top: -20px;
+        margin-left: -55px;
+        margin-bottom: -20px;
+    }
+    @font-face {
+      font-family:hol ;
+      src: url(/Photograph\ Signature.ttf);
+    }
+    .contenido{
+      margin-top: 300px;
+      margin-right: 20px;
+      margin-left: 30px;
+    }
+    .fot{
+      background-color: rgba(114, 114, 4, 0.268);
+    }
+</style>
+</head>
+<body class="">
+    <div
+      class="bg-danger d-flex align-items-center "
+      style="min-height: 56px; z-index: 5;"
+    >
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col d-flex align-items-center">
+            <!-- logo -->
+            <a href="inicia.html"><img class="img" style="margin-left: -30;" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9abda333899292.56bc43f7e24d8.png" width="205" height="120px"></i></a>
+            <div class="input-group ms-2" type="button">
+              <span
+                class="input-group-prepend d-lg-none"
+                id="searchMenu"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-auto-close="outside"
+              >
+                <div
+                  class="input-group-text bg-warning border-0 rounded-circle"
+                  style="min-height: 40px"
+                >
+                  <i class="fas fa-search text-dark"></i>
+                </div>
+              </span>
+              <!-- desktop -->
+              <span
+                class="input-group-prepend d-none d-lg-block"
+                id="searchMenu"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-auto-close="outside"
+              >
+                <div
+                  class="input-group-text bg-warning border-0 rounded-pill"
+                  style="min-height: 40px; min-width: 230px"
+                >
+                  <i class="fas fa-search me-2 text-dark"></i>
+                  <p class="m-0 fs-7 text-dark">Buscar ComComics...</p>
+                </div>
+              </span>
+              <!-- search menu -->
+              <ul
+                class="dropdown-menu overflow-auto bg-danger border-0  text-dark  p-3"
+                aria-labelledby="searchMenu"
+                style="width: 20em; max-height: 600px"
+              >
+                <!-- search input -->
+                <li>
+                  <input
+                    type="text"
+                    class="rounded-pill border-0 bg-warning text-dark dropdown-item"
+                    placeholder="Buscar ComComics..."
+                    autofocus
+                  />
+                </li>
+                <!-- search 1 -->
+                <li class="my-4">
+                  <div
+                    class="
+                      alert
+                      fade
+                      show
+                      dropdown-item
+                      p-1
+                      m-0
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                    "
+                    role="alert"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://source.unsplash.com/random/1"
+                        alt="avatar"
+                        class="rounded-circle me-2"
+                        style="width: 35px; height: 35px; object-fit: cover"
+                      />
+                      <p class="m-0">Lorem ipsum</p>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close p-0 m-0"
+                      data-bs-dismiss="alert"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                </li>
+                <!-- search 2 -->
+                <li class="my-4">
+                  <div
+                    class="
+                      alert
+                      fade
+                      show
+                      dropdown-item
+                      p-1
+                      m-0
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                    "
+                    role="alert"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://source.unsplash.com/random/2"
+                        alt="avatar"
+                        class="rounded-circle me-2"
+                        style="width: 35px; height: 35px; object-fit: cover"
+                      />
+                      <p class="m-0">Lorem ipsum</p>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close p-0 m-0"
+                      data-bs-dismiss="alert"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                </li>
+                <!-- search 3 -->
+                <li class="my-4">
+                  <div
+                    class="
+                      alert
+                      fade
+                      show
+                      dropdown-item
+                      p-1
+                      m-0
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                    "
+                    role="alert"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://source.unsplash.com/random/3"
+                        alt="avatar"
+                        class="rounded-circle me-2"
+                        style="width: 35px; height: 35px; object-fit: cover"
+                      />
+                      <p class="m-0">Lorem ipsum</p>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn-close p-0 m-0"
+                      data-bs-dismiss="alert"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col d-none d-xl-flex justify-content-center">
+            <div class="mx-4 nav__btn nav">
+             <a href="inicia.html"> <button type="button" class="btn px-4">
+                <i class="fas fa-home text-dark fs-4"></i>
+              </button></a>
+            </div>
+            <div class="mx-4 nav__btn">
+              <a href="indexi.html"><button type="button" class="btn px-4">
+                <i class="fas fa-store text-dark fs-4"></i>
+              </button></a>
+            </div>
+            <div class="mx-4 nav__btn">
+                <a href="amigos.html"><button type="button" class="btn px-4">
+                    <i type="button"class="position-relative fas fa-users text-dark fs-4" >
+                      <span class="  position-absolute  top-0 start-100 translate-middle badge rounded-pill bg-warning" style="font-size: 0.5rem" >
+                       99
+                        <span class="visually-hidden"></span>
+                      </span>
+                    </i>
+                  </button></a> 
+            </div>
+            <div class="mx-4 nav__btn">
+              <button type="button" class="btn px-4">
+                <i class="fas fa-book text-dark fs-4"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col d-flex align-items-center justify-content-end">
+            <div class="align-items-center justify-content-center d-none d-xl-flex"  >
+             <a href="perfil.html"><img src="https://i.pinimg.com/564x/69/cb/b2/69cbb22f94b0329f438d965234de81a4.jpg"  class="rounded-circle me-2" alt="avatar" style="width: 38px; height: 38px; object-fit: cover"  />
+             </a> <p class="m-0">Aslan</p>
+            </div>
+            <!-- main menu -->
+                       
+            <div class=" rounded-circle  p-1 bg-warning d-flex align-items-center justify-content-center mx-2 "style="width: 38px; height: 38px"  type="button"id="mainMenu"data-bs-toggle="dropdown"aria-expanded="false" data-bs-auto-close="outside" >
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+              <ul class="dropdown-menu border-0 shadow p-3 bg-danger overflow-auto" aria-labelledby="mainMenu"  style="width: 23em; max-height: 600px"  >
+                <div>
+                  <li class="p-1 mx-2">
+                    <h2>Menu</h2>
+                  </li>
+                  <li class="p-1">
+                    <div class="input-group-text bg-warning border-0 rounded-pill"  style="min-height: 40px; min-width: 230px">
+                      <i class="fas fa-search me-2 text-dark"></i>
+                      <input type="text" class="form-control rounded-pill border-0 bg-warning text-dark" placeholder="Search Menu"/>
+                    </div>
+                  </li>
+                  <h4 class="m-2">Social</h4>
+                  <li class="my-2 p-1">
+                    <a href="#" class="text-decoration-none text-dark  d-flex  align-items-center justify-content-between ">
+                      <div class="p-2">
+                        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/Y7r38CcFEw5.png" alt="icon from fb" class="rounded-circle" style="width: 48px; height: 48px; object-fit: cover" />
+                      </div>
+                      <div>
+                        <p class="m-0">Entretenimiento</p>
+                        <span class="fs-7 text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Odio, commodi.</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="my-2 p-1">
+                    <a href="#"  class=" text-decoration-none text-dark  d-flex align-items-center justify-content-between  "  >
+                      <div class="p-2">
+                        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/N7UOh8REweU.png" alt="icon from fb"  class="rounded-circle" style="width: 48px; height: 48px; object-fit: cover"  />
+                      </div>
+                      <div>
+                        <p class="m-0">Eventos</p>
+                        <span class="fs-7 text-dark"
+                          >Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Odio, commodi.</span
+                        >
+                      </div>
+                    </a>
+                  </li>
+                  <li class="my-2 p-1">
+                    <a href="#" class=" text-decoration-none text-dark  d-flex  align-items-center justify-content-between " >
+                      <div class="p-2">
+                        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/tSXYIzZlfrS.png" alt="icon from fb" class="rounded-circle" style="width: 48px; height: 48px; object-fit: cover" />
+                      </div>
+                      <div>
+                        <p class="m-0">amigos</p>
+                        <span class="fs-7 text-dark"
+                          >Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Odio, commodi.</span  >
+                      </div>
+                    </a>
+                  </li>
+                  <li class="my-2 p-1">
+                    <a  href="#"  class="  text-decoration-none text-dark d-flex align-items-center justify-content-between ">
+                      <div class="p-2">
+                        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/Im_0d7HFH4n.png"  alt="icon from fb"  class="rounded-circle" style="width: 48px; height: 48px; object-fit: cover" />
+                      </div>
+                      <div>
+                        <p class="m-0">Grupos</p>
+                        <span class="fs-7 text-dark"
+                          >Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Odio, commodi.</span>
+                      </div>
+                    </a>
+                  </li>
+  
+                  <li class="my-2 p-1">
+                    <a href="#" class=" text-decoration-none text-dark  d-flex align-items-center justify-content-between  "  >
+                      <div class="p-2">
+                        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/hLkEFzsCyXC.png"  alt="icon from fb"  class="rounded-circle" style="width: 48px; height: 48px; object-fit: cover"/>
+                      </div>
+                      <div>
+                        <p class="m-0">Noticias</p>
+                        <span class="fs-7 text-dark">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Odio, commodi.</span>
+                      </div>
+                    </a>
+                  </li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+                  <li class="my-2 p-1">
+                    <a
+                      href="#"
+                      class="
+                        text-decoration-none text-dark
+                        d-flex
+                        align-items-center
+                        justify-content-between
+                      "
+                    >
+                      <div class="p-2">
+                        <img
+                          src="https://static.xx.fbcdn.net/rsrc.php/v3/yj/r/0gH3vbvr8Ee.png"
+                          alt="icon from fb"
+                          class="rounded-circle"
+                          style="width: 48px; height: 48px; object-fit: cover"
+                        />
+                      </div>
+                      <div>
+                        <p class="m-0">Paginas</p>
+                        <span class="fs-7 text-dark"
+                          >Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Odio, commodi.</span
+                        >
+                      </div>
+                    </a>
+                  </li>
+                  <hr />
+  
+                  
+       
+    
+      </a>
+    </li>
+  </div>
+  </ul>
+  <div
+  class="
+    rounded-circle
+    p-1
+    bg-warning
+    d-flex
+    align-items-center
+    justify-content-center
+    mx-2
+  "
+  style="width: 38px; height: 38px"
+  type="button"
+  id="chatMenu"
+  data-bs-toggle="dropdown"
+  aria-expanded="false"
+  data-bs-auto-close="outside"
+  >
+  <i class="fas fa-comment"></i>
+  </div>
+  <ul
+  class="dropdown-menu border-0 shadow p-3 overflow-auto bg-danger"
+  aria-labelledby="chatMenu"
+  style="width: 23em; max-height: 600px"
+  >
+  <li class="p-1">
+    <div class="d-flex justify-content-between">
+      <h2>Mensajes</h2>
+      <div>
+        <i
+          class="fas fa-ellipsis-h text-dark mx-2"
+          type="button"
+          data-bs-toggle="dropdown"
+        ></i>
+        <ul class="dropdown-menu shadow bg-warning" style="width: 18em">
+          <div class="p-2">
+            <h5>Ajustes de Chat</h5>
+            <span class="text-dark fs-7"
+              >Personaliza tus mensajes.</span
+            >
+          </div>
+          <hr />
+          <li>
+            <div
+              class="
+                dropdown-item
+                d-flex
+                align-items-center
+                justify-content-between
+              ">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-phone-alt me-3 text-dark"></i>
+                <p class="m-0">Tonos de Llamada Entrante</p>
+              </div>
+              <div class="form-check form-switch m-0">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="flexSwitchCheckChecked"
+                  checked
+                />
+                <label
+                  class="form-check-label"
+                  for="flexSwitchCheckChecked"
+                ></label>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div
+              class="
+                dropdown-item
+                d-flex
+                align-items-center
+                justify-content-between
+              "
+            >
+              <div class="d-flex align-items-center">
+                <i class="fas fa-volume-off me-4 fs-4"></i>
+                <p class="m-0">Tonos de Mensajes</p>
+              </div>
+              <div class="form-check form-switch m-0">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="flexSwitchCheckChecked"
+                  checked
+                />
+                <label
+                  class="form-check-label"
+                  for="flexSwitchCheckChecked"
+                ></label>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div
+              class="
+                dropdown-item
+                d-flex
+                align-items-center
+                justify-content-between
+              "
+            >
+              <div class="d-flex align-items-center">
+                <i class="fas fa-spinner me-3"></i>
+                <p class="m-0">Abrir Nuevos Mensajes </p>
+              </div>
+              <div class="form-check form-switch m-0">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="flexSwitchCheckChecked"
+                  checked
+                />
+                <label
+                  class="form-check-label"
+                  for="flexSwitchCheckChecked"
+                ></label>
+              </div>
+            </div>
+            <span class="ms-5 text-muted fs-7"
+              >Abrir nuevos mensajes automaticamente.</span
+            >
+          </li>
+          <hr class="m-0" />
+          <li>
+            <div
+              class="
+                dropdown-item
+                d-flex
+                align-items-center
+                justify-content-between
+              "
+            >
+              <div class="d-flex align-items-center">
+                <i class="fas fa-toggle-off me-3"></i>
+                <p class="m-0">Apagar estado activo</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div
+              class="
+                dropdown-item
+                d-flex
+                align-items-center
+                justify-content-between
+                text-dark
+  
+              "
+            >
+              <div class="d-flex align-items-center">
+                <i class="fas fa-shield-alt me-3 text-dark"></i>
+                <p class="m-0">Ajustes de Bloqueo</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <i
+          class="fas fa-expand-arrows-alt text-dark mx-2"
+          type="button"
+        ></i>
+        <i
+          class="fas fa-edit text-dark mx-2"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#newChat"
+        ></i>
+      </div>
+    </div>
+  </li>
+  <li class="p-1">
+    <div
+      class="input-group-text bg-warning border-0 rounded-pill"
+      style="min-height: 40px; min-width: 230px"
+    >
+      <i class="fas fa-search me-2 text-muted"></i>
+      <input
+        type="text"
+        class="form-control rounded-pill border-0 bg-warning"
+        placeholder="Buscar Mensajes "
+      />
+    </div>
+  </li>
+  <hr class="m-0" />
+  <a href="#" class="text-decoration-none">
+    <p class="fw-bold text-center pt-3 m-0">Ver Todo en Mensajes </p>
+  </a>
+  </ul>
+  <div
+  class="
+    rounded-circle
+    p-1
+    bg-warning
+    d-flex
+    align-items-center
+    justify-content-center
+    mx-2
+  "
+  style="width: 38px; height: 38px"
+  type="button"
+  id="notMenu"
+  data-bs-toggle="dropdown"
+  aria-expanded="false"
+  data-bs-auto-close="outside"
+  >
+  <i class="fas fa-bell"></i>
+  </div>
+  <ul
+  class="dropdown-menu border-0 shadow p-3 bg-danger"
+  aria-labelledby="notMenu"
+  style="width: 23em; max-height: 600px; overflow-y: auto"
+  >
+  <li class="p-1">
+    <div class="d-flex justify-content-between">
+      <h2>Notificaciones</h2>
+      <div>
+        <i
+          class="
+            fas
+            fa-ellipsis-h
+            pointer
+            p-2
+            rounded-circle
+            bg-danger
+          "
+          type="button"
+          data-bs-toggle="dropdown"
+        ></i>
+        <ul class="dropdown-menu bg-warning">
+          <li
+            class="dropdown-item d-flex align-items-center"
+            type="button"
+          >
+            <i class="fas fa-check me-3 text-dark"></i>
+            <p class="m-0">Marcar todo como leído</p>
+          </li>
+          <li
+            class="dropdown-item d-flex align-items-center"
+            type="button"
+          >
+            <i class="fas fa-cog me-3 text-dark"></i>
+            <p class="m-0">Privacy Checkup</p>
+          </li>
+          <li
+            class="dropdown-item d-flex align-items-center"
+            type="button"
+          >
+            <i class="fas fa-desktop me-3 text-dark"></i>
+            <p class="m-0">Privacy Shortcuts</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-flex" type="button">
+      <p class="rounded-pill bg-danger p-2">Todo</p>
+      <p class="ms-3 rounded-pill bg-warning p-2 text-dark">
+       No Leído
+      </p>
+    </div>
+  </li>
+  <div class="d-flex justify-content-between mx-2">
+    <h5>Nuevo</h5>
+    <a href="#" class="text-decoration-none">Ver Todo</a>
+  </div>
+  
+  </ul>
+  
+  
+  
+  
+  
+  
+  <div
+  class="
+    rounded-circle
+    p-1
+    bg-warning
+    d-flex
+    align-items-center
+    justify-content-center
+    mx-2
+  "
+  style="width: 38px; height: 38px"
+  type="button"
+  id="secondMenu"
+  data-bs-toggle="dropdown"
+  aria-expanded="false"
+  data-bs-auto-close="outside"
+  >
+  <i class="fas fa-caret-down"></i>
+  </div>
+  <ul
+  class="dropdown-menu border-0 bg-danger shadow p-3"
+  aria-labelledby="secondMenu"
+  style="width: 23em"
+  >
+  <a href="perfil.html" style="text-decoration: none;"><li class="dropdown-item p-1 rounded d-flex" type="button">
+    <img
+      src="https://i.pinimg.com/564x/69/cb/b2/69cbb22f94b0329f438d965234de81a4.jpg"
+      alt="avatar"
+      class="rounded-circle me-2"
+      style="width: 45px; height: 45px; object-fit: cover"
+    />
+    <div>
+      <p class="m-0">Aslan</p>
+      <p class="m-0 text-dark">Ve tu Perfil</p>
+    </div>
+  </li></a>
+  <hr />
+  <li
+    class="dropdown-item p-1 rounded d-flex align-items-center"
+    type="button"
+  >
+    <i
+      class="fas fa-exclamation-circle bg-warning p-2 rounded-circle"
+    ></i>
+    <div class="ms-3">
+      <p class="m-0">Danos tu Opinión</p>
+      <p class="m-0 text-dark fs-7">
+        Ayúdanos a mejorar el nuevo ConComics.
+      </p>
+    </div>
+  </li>
+  <hr />
+  <li class="dropdown-item p-1 my-3 rounded" type="button">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <div class="d-flex" data-bs-toggle="dropdown">
+          <i class="fas fa-cog bg-warning p-2 rounded-circle"></i>
+          <div
+            class="
+              ms-3
+              d-flex
+              justify-content-between
+              align-items-center
+              w-100
+            "
+          >
+            <p class="m-0">Ajustes & Privacidad</p>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        <ul class="dropdown-menu bg-warning">
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="#"
+            >
+              <div
+                class="
+                  rounded-circle
+                  p-1
+                  bg-danger
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  me-2
+                "
+                style="width: 38px; height: 38px"
+              >
+                <i class="fas fa-cog"></i>
+              </div>
+              <p class="m-0">Ajustes</p>
+            </a>
+          </li>
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="#"
+            >
+              <div
+                class="
+                  rounded-circle
+                  p-1
+                  bg-danger
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  me-2
+                "
+                style="width: 38px; height: 38px"
+              >
+                <i class="fas fa-lock"></i>
+              </div>
+              <p class="m-0">Verificación de Privacidad</p>
+            </a>
+          </li>
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="#"
+            >
+              <div
+                class="
+                  rounded-circle
+                  p-1
+                  bg-danger
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  me-2
+                "
+                style="width: 38px; height: 38px"
+              >
+                <i class="fas fa-unlock-alt"></i>
+              </div>
+              <p class="m-0">Atajos de Seguridad</p>
+            </a>
+          </li>
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="#"
+            >
+              <div
+                class="
+                  rounded-circle
+                  p-1
+                  bg-danger
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  me-2
+                "
+                style="width: 38px; height: 38px"
+              >
+                <i class="fas fa-list"></i>
+              </div>
+              <p class="m-0">Registros de Actividades</p>
+            </a>
+          </li>
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="#"
+            >
+              <div
+                class="
+                  rounded-circle
+                  p-1
+                  bg-danger
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  me-2
+                "
+                style="width: 38px; height: 38px"
+              >
+                <i class="fas fa-newspaper"></i>
+              </div>
+              <p class="m-0">preferencias de suministro de noticias</p>
+            </a>
+          </li>
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="#"
+            >
+              <div
+                class="
+                  rounded-circle
+                  p-1
+                  bg-danger
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  me-2
+                "
+                style="width: 38px; height: 38px"
+              >
+                <i class="fas fa-globe"></i>
+              </div>
+              <p class="m-0">Idioma</p>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown-item p-1 my-3 rounded" type="button">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <div class="d-flex" data-bs-toggle="dropdown">
+          <i
+            class="
+              fas
+              fa-question-circle
+              bg-warning
+              p-2
+              rounded-circle
+            "
+          ></i>
+          <div
+            class="
+              ms-3
+              d-flex
+              justify-content-between
+              align-items-center
+              w-100
+            "
+          >
+            <p class="m-0">Ayuda & Soporte</p>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        <ul class="dropdown-menu bg-warning" >
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="#"
+            >
+              <div
+                class="
+                  rounded-circle
+                  p-1
+                  bg-danger
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  me-2
+                "
+                style="width: 38px; height: 38px"
+              >
+                <i class="fas fa-cog"></i>
+              </div>
+              <p class="m-0">Ajustes</p>
+            </a>
+          </li>
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="#"
+            >
+              <div
+                class="
+                  rounded-circle
+                  p-1
+                  bg-danger
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  me-2
+                "
+                style="width: 38px; height: 38px"
+              >
+                <i class="fas fa-lock"></i>
+              </div>
+              <p class="m-0">Verificación de Privacidad</p>
+            </a>
+          </li>
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="#"
+            >
+              <div
+                class="
+                  rounded-circle
+                  p-1
+                  bg-danger
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  me-2
+                "
+                style="width: 38px; height: 38px"
+              >
+                <i class="fas fa-unlock-alt"></i>
+              </div>
+              <p class="m-0">Atajos de Privacidad</p>
+            </a>
+          </li>
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="#"
+            >
+              <div
+                class="
+                  rounded-circle
+                  p-1
+                  bg-danger
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  me-2
+                "
+                style="width: 38px; height: 38px"
+              >
+                <i class="fas fa-list"></i>
+              </div>
+              <p class="m-0">Registro de Actividades</p>
+            </a>
+          </li>
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="#"
+            >
+              <div
+                class="
+                  rounded-circle
+                  p-1
+                  bg-danger
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  me-2
+                "
+                style="width: 38px; height: 38px"
+              >
+                <i class="fas fa-newspaper"></i>
+              </div>
+              <p class="m-0">Preferencias del Suministro de Noticias</p>
+            </a>
+          </li>
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="#"
+            >
+              <div
+                class="
+                  rounded-circle
+                  p-1
+                  bg-danger
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  me-2
+                "
+                style="width: 38px; height: 38px"
+              >
+                <i class="fas fa-globe"></i>
+              </div>
+              <p class="m-0">Idioma</p>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown-item p-1 my-3 rounded" type="button">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <div class="d-flex" data-bs-toggle="dropdown">
+          <i class="fas fa-moon bg-warning p-2 rounded-circle"></i>
+          <div
+            class="
+              ms-3
+              d-flex
+              justify-content-between
+              align-items-center
+              w-100
+            "
+          >
+            <p class="m-0">Visualización & Accesibilidad</p>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        <ul class="dropdown-menu bg-warning">
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="#"
+            >
+              <div
+                class="
+                  rounded-circle
+                  p-1
+                  bg-danger
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  me-2
+                "
+                style="width: 38px; height: 38px"
+              >
+                <i class="fas fa-cog"></i>
+              </div>
+              <p class="m-0">Ajustes</p>
+            </a>
+          </li>
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="#"
+            >
+              <div
+                class="
+                  rounded-circle
+                  p-1
+                  bg-danger
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  me-2
+                "
+                style="width: 38px; height: 38px"
+              >
+                <i class="fas fa-lock"></i>
+              </div>
+              <p class="m-0">Verificación de Seguridad</p>
+            </a>
+          </li>
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="#"
+            >
+              <div
+                class="
+                  rounded-circle
+                  p-1
+                  bg-danger
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  me-2
+                "
+                style="width: 38px; height: 38px"
+              >
+                <i class="fas fa-unlock-alt"></i>
+              </div>
+              <p class="m-0">Atajos de Privacidad</p>
+            </a>
+          </li>
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="#"
+            >
+              <div
+                class="
+                  rounded-circle
+                  p-1
+                  bg-danger
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  me-2
+                "
+                style="width: 38px; height: 38px"
+              >
+                <i class="fas fa-list"></i>
+              </div>
+              <p class="m-0">Registro de Actividades</p>
+            </a>
+          </li>
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="#"
+            >
+              <div
+                class="
+                  rounded-circle
+                  p-1
+                  bg-danger
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  me-2
+                "
+                style="width: 38px; height: 38px"
+              >
+                <i class="fas fa-newspaper"></i>
+              </div>
+              <p class="m-0">Preferencias del Suministro de Noticias</p>
+            </a>
+          </li>
+          <li>
+            <a
+              class="dropdown-item d-flex align-items-center"
+              href="#"
+            >
+              <div
+                class="
+                  rounded-circle
+                  p-1
+                  bg-danger
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  me-2
+                "
+                style="width: 38px; height: 38px"
+              >
+                <i class="fas fa-globe"></i>
+              </div>
+              <p class="m-0">Idioma</p>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li><li class="dropdown-item p-1 my-3 rounded" type="button">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+          <i class="fas fa-cog bg-warning p-2 rounded-circle"></i>
+          <div
+            class="
+              ms-3
+              d-flex
+              justify-content-between
+              align-items-center
+              w-100
+            "
+          >
+            <p class="m-0"><button id="logout" class="btn btn-outline" style="margin-top: -60px; margin-left: 10px;">Salir</button></p>
+          </div>
+      </li>
+    </ul>
+  </li>
+  </ul>
+            <!-- end -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div  id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+  </ol>
+  <div class="carousel-inner"  style="margin-top: 20px;">
+    <div class="carousel-item active">
+      <img class="d-block w-100" id="img" src="https://heyeduardojose.com/wp-content/uploads/2021/04/comic-1024x597-1.jpg"width="600px" height="650px" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" id="img" src="https://freakelitex.com/wp-content/uploads/2017/10/Panini-Comics.png"  width="600px" height="650px"  alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" id="img" src="https://4.bp.blogspot.com/-Wq9G1OApn7c/Wo3xggp6PgI/AAAAAAAAB-s/9yd4zLdyrDcx9cwAadeVZXJbJtibLgNfACLcBGAs/s1600/Screenshot_2.png"  width="600px" height="650px"  alt="Third slide">
+    </div>
+    <div class="carousel-item">
+        <img class="d-block w-100" id="img" src="https://freakelitex.com/wp-content/uploads/2017/10/Panini-Comics.png"  width="600px" height="650px"  alt="Fourth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" id="img" src="https://2.bp.blogspot.com/-BcbNqwyxMys/Wo3xgQ8cmEI/AAAAAAAAB-o/GXuqNoPLPnIe0NENnj0FYf85-hrm5tqjwCLcBGAs/s1600/Screenshot_1.png"  width="600px" height="650px"  alt="Fifth slide">
+      </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br>
+ <div class="container col-12 ">
+   <div class="row ">
+    <div class="listado col-12 ">
+      <h1 id="list" style="font-family: hol; font-size: 70px; font-weight: 700;" class="text-warning">Listado de Comics</h1>
+    </div>
+    <br>
+    <div class="col-sm-3 " style="margin-bottom: 40px;">
+    <div class="card bg-dark">
+      <div class="card-body">
+        <h5 class="card-title text-center "><img id="img_obs" width="220px" height="300px" src="https://depor.com/resizer/6fuzTpUaBw63y3ugkz9TYzsmPLk=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/U75M2XY3TVCK7PYO5NBNOHZV3Q.jpeg"></h5>
+        <p class="card-text text-white"><label id="desayuno">Deadpool: The End </label><br>Edición en Ingles<br>Tapa blanda<br>
+        Incluye: S/ 196.31</p>
+        <p class="collapse text-white" id="collapseExample">
+          ¡LA HISTORIA FINAL DE DEADPOOL! Wade Wilson puede parecer que es imposible de matar, pero hay más de una manera de acabar con él... ¡pero no confíes en mi palabra!
+  </p>
+        <p class="card-text text-right">
+        <a href="https://www.amazon.com/-/es/Joe-Kelly-ebook/dp/B07ZHLPTGP/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=M3Z21SEXH0KB&keywords=Deadpool%3A+The+End%2C&qid=1643354866&sprefix=deadpool+the+end%2C%2Caps%2C357&sr=8-1" class="btn btn-primary">Comprar</a>
+        <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" class="btn bt-success bg-transparent text-white">Más >></a>
+      </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3" style="margin-bottom: 40px;">
+    <div class="card bg-dark">
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-center"><img id="img_obs" width="220px" height="300px" src="https://images-na.ssl-images-amazon.com/images/I/91ZiXDYRM6L.jpg"></h5>
+        <p class="card-text text-white"><label id="desayuno">Solo Leveling Vol. 1 </label><br>Autor: Chugong <br>Tapa blanda<br>
+        Incluye: S/ 63.07</p>
+        <p class="collapse text-white" id="collapseExample2">
+          Conocido como el cazador más débil de toda la humanidad, la contribución del cazador de rango E Jinwoo Sung a las redadas consiste en tratar de que no lo maten.
+  </p>
+        <p class="card-text text-right">
+        <a  href="https://www.amazon.com/-/es/DUBU-REDICE-STUDIO/dp/1975319435/ref=pd_bxgy_2/134-1195518-9499525?pd_rd_w=1Yb3u&pf_rd_p=6b3eefea-7b16-43e9-bc45-2e332cbf99da&pf_rd_r=KXQF1AWTJRKNRQY564G5&pd_rd_r=6157c5ac-1977-4639-b13d-7e26e8f6c137&pd_rd_wg=4mjjv&pd_rd_i=1975319435&psc=1" class="btn btn-primary">Comprar</a>
+        <a data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample"   href="#" class="btn bt-success text-white">Más >></a>
+      </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3" style="margin-bottom: 40px;">
+    <div class="card bg-dark">
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-center"><img id="img_obs" width="220px" height="300px" src="https://images-na.ssl-images-amazon.com/images/I/819ZdgZRK3L.jpg"></h5>
+        <p class="card-text text-white"><label id="desayuno">Coraline: The Graphic Novel </label><br>Edición en ingles<br>Tapa  blanda<br>
+        Incluye: S/ 37.27</p>
+        <p class="collapse text-white" id="collapseExample3">
+          Cuando Coraline atraviesa una puerta y encuentra otra casa extrañamente similar a la suya.Coraline tendrá que luchar con todo si quiere salvarse y volver a su vida normal.
+  </p>
+        <p class="card-text text-right">
+        <a href="https://www.amazon.com/-/es/Neil-Gaiman/dp/0060825456/ref=sr_1_48?crid=3LQZBDEAP3ZX0&keywords=comics+en+espa%C3%B1ol&qid=1643352517&sprefix=comics+en+e%2Caps%2C353&sr=8-48" class="btn btn-primary">Comprar</a>
+        <a data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" class="btn bt-success text-white">Más >></a>
+      </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3" style="margin-bottom: 40px;">
+    <div class="card bg-dark">
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-center"><img id="img_obs" width="220px" height="300px" src="https://images-na.ssl-images-amazon.com/images/I/91yiBtD0imL.jpg"></h5>
+        <p class="card-text text-white"><label id="desayuno">Naruto nº 01</label><br>Edición en Español <br>Tapa  blanda<br>
+        Incluye: S/33.30</p>
+       <p class="collapse text-white" id="collapseExample4">
+        El sueño de Naruto es el de llegar un día a heredar el nombre de Hokage, reservado a los grandes héroes y de convertirse en el mejor ninja de todos los tiempos.
+  </p>
+        <p class="card-text text-right">
+        <a href="https://www.amazon.com/-/es/Masashi-Kishimoto/dp/8415821816/ref=sr_1_31?crid=3LQZBDEAP3ZX0&keywords=comics+en+espa%C3%B1ol&qid=1643352517&sprefix=comics+en+e%2Caps%2C353&sr=8-31" class="btn btn-primary">Comprar</a>
+        <a data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" class="btn bt-success text-white">Más >></a>
+      </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3" style="margin-bottom: 40px;">
+    <div class="card bg-dark">
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-center"><img id="img_obs" width="220px" height="300px"   src="https://images-na.ssl-images-amazon.com/images/I/81a981gIYDL.jpg"></h5>
+        <p class="card-text text-white"><label id="desayuno">Magalina y el bosque de los animales mágicos</label><br>Edición en Español <br>Tapa dura <br>
+        Incluye: S/49.17</p>
+   <p class="collapse text-white" id="collapseExample5">
+    ¡Entra en el misterioso mundo de los animales mágicos !
+    <br>
+    Magalina acaba de llegar al campamento de criptozoología para aprende todo sobre : ¡el estudio de animales mágicos!
+ 
+  </p>
+        <p class="card-text text-right">
+        <a href="https://www.amazon.com/-/es/Sylvia-Douye/dp/8420434213/ref=sr_1_20?crid=OSXNI4XB583N&keywords=comic+en+espa%C3%B1ol&qid=1643354462&sprefix=comic+en+%2Caps%2C170&sr=8-20" class="btn btn-primary">Añadir al Carrito</a>
+        <a data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" class="btn bt-success text-white">Más >></a>
+      </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3" style="margin-bottom: 40px;">
+    <div class="card bg-dark">
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-center"><img id="img_obs" width="220px" height="300px"  src="https://images-na.ssl-images-amazon.com/images/I/8125DI58M+L.jpg"></h5>
+        <p class="card-text text-white"><label id="desayuno">Haikyu!! Vol. 1</label><br>Edición Inglés <br>Pasta blanda<br>
+        Incluye: S/ 93.79</p>
+        <p class="collapse text-white" id="collapseExample6">
+          ¡Desde que vio al legendario jugador conocido como "el Pequeño Gigante" competir en las finales nacionales de voleibol, Shoyo Hinata ha querido ser el mejor jugador de voleibol de todos los tiempos!
+  </p>
+        <p class="card-text text-right">
+        <a href="https://www.amazon.com.mx/Haikyu-Vol-1-Haruichi-Furudate/dp/1421587661/ref=sr_1_2?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=X0CAAER16OYU&keywords=haikyuu+manga&qid=1643346914&sprefix=haikmanga%2Caps%2C431&sr=8-2" class="btn btn-primary">Comprar</a>
+        <a data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" class="btn bt-success text-white">Más >></a>
+      </p>
+      </div>
+    </div>
+  </div>   
+  <div class="col-sm-3" style="margin-bottom: 40px;">
+    <div class="card bg-dark ">
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-center"><img id="img_obs" width="220px" height="300px" src="https://images-na.ssl-images-amazon.com/images/I/81Uy8EdPLiL.jpg"></h5>
+        <p class="card-text text-white"><label id="desayuno">Tokyo Revengers 1</label><br>por Ken Wakui <br>Tapa blanda <br>
+        Incluye: S/40.59</p>
+        <p class="collapse text-white" id="collapseExample7">
+          Hinata, su novia de secundaria y la única de su vida, fue asesinada por el grupo Tokio Manji. Después de la muerte de su antigua novia, Takemichi, salta doce años de regreso en el tiempo.
+  </p>
+        <p class="card-text text-right">
+        <a href="https://www.amazon.com.mx/Tokyo-Revengers-1-Ken-Wakui/dp/6075689036/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=MFQXAXLD2USD&keywords=tokyo+revengers+manga&qid=1643345817&sprefix=tokio+revenge+manga%2Caps%2C330&sr=8-1 class=" class="btn btn-primary">Comprar</a>
+        <a data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" class="btn bt-success text-white">Más >></a>
+      </p>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="col-sm-3" style="margin-bottom: 40px;">
+    <div class="card bg-dark ">
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-center"><img id="img_obs" width="220px" height="300px" src="https://images-na.ssl-images-amazon.com/images/I/61ov89GIS7L.jpg"></h5>
+        <p class="card-text text-white"><label id="desayuno">Hanako Kun Y Los Misterios De La Academia Kamome N.1</label><br>Pasta blanda<br>
+        Incluye: S/23.91</p>
+        <p class="collapse text-white" id="collapseExample8">
+          En la Academia Kamome se dice que hay una tal "Hanako-san" en el tercer cubículo del baño de niñas del tercer piso del edificio viejo, ella le cumple cualquier deseo a quien la invoque.
+  </p>
+        <p class="card-text text-right">
+        <a href="https://www.amazon.com.mx/Hanako-Kun-Misterios-Academia-Kamome/dp/6075683461/ref=sr_1_2?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=33R7LQKPOAY9I&keywords=manga&qid=1643344962&sprefix=man%2Caps%2C478&sr=8-2" class="btn btn-primary">Comprar</a>
+        <a data-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" class="btn bt-success text-white">Más >></a>
+      </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3" style="margin-bottom: 40px;">
+    <div class="card bg-dark ">
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-center"><img id="img_obs" width="220px" height="300px" src="https://images-na.ssl-images-amazon.com/images/I/912mJf7tsUL.jpg"></h5>
+        <p class="card-text text-white"><label id="desayuno">My Hero Academia N.1</label><br>por Horikoshi Kohei<br>Pasta blanda<br>
+        Incluye:S/48.01</p>
+        <p class="collapse text-white" id="collapseExample9">
+          En un mundo donde los superpoderes son cosa de todos los días, ¿qué sucede con un aspirante a superhéroe que no tiene ningún superpoder? Midoriya tiene la mala fortuna de no haber manifestado ninguna “singularidad” 
+  </p>
+        <p class="card-text text-right">
+        <a href="https://www.amazon.com.mx/Boku-No-Hero-Academia-N-1/dp/6075281177/ref=sr_1_2?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3AQ4IIJGYJD7U&keywords=boku+no+hero+manga&qid=1643347295&sprefix=boku+no+hero+manga%2Caps%2C492&sr=8-2" class="btn btn-primary">Comprar</a>
+        <a data-toggle="collapse" href="#collapseExample9" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" class="btn bt-success text-white" >Más >></a>
+      </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3" style="margin-bottom: 40px;">
+    <div class="card bg-dark ">
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-center"><img id="img_obs" width="220px" height="300px" src="https://images-na.ssl-images-amazon.com/images/I/91hkqY8yghL.jpg"></h5>
+        <p class="card-text text-white"><label id="desayuno">Your Name N.1</label><br>por Shinkai Makoto<br>Pasta blanda<br>
+        Incluye: S/18.39</p>
+        <p class="collapse text-white" id="collapseExample10">
+          El encuentro de dos personas que no se han visto. Esto sucede en Japón, dentro de un mes, se verá un cometa que no ha parecido en mil años ,la historia del encuentro de dos personas que no se han visto comienza aquí.
+  </p>
+        <p class="card-text text-right">
+        <a href="https://www.amazon.com.mx/Your-Name-N-1-Shinkai-Makoto/dp/6075286861/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1QSWWEU8RJDF2&keywords=your+name+manga&qid=1643347708&sprefix=your+name+manga%2Caps%2C292&sr=8-1" class="btn btn-primary">Comprar </a>
+        <a data-toggle="collapse" href="#collapseExample10" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" class="btn bt-success text-white">Más >></a>
+      </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3"  style="margin-bottom: 40px;">
+    <div class="card bg-dark ">
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-center"><img id="img_obs" width="220px" height="300px" src="https://images-na.ssl-images-amazon.com/images/I/9131YNW3V2L.jpg"></h5>
+        <p class="card-text text-white"><label id="desayuno">Dragon Ball</label><br>por Akira Toriyama<br>Edición Kindle<br>
+        Incluye: S/17.65</p>
+        <p class="collapse text-white" id="collapseExample11">
+          Goku, un niño muy especial que ha tenido que valerse por sí mismo en medio de la naturaleza. Un día conoció a Bulma, una chica que busca las siete Esferas del Dragón sin imaginar que hay otros seres también las desean.
+  </p>
+        <p class="card-text text-right">
+        <a href="https://www.amazon.com.mx/Dragon-Ball-Akira-Toriyama-ebook/dp/B07L9LS8JF/ref=sr_1_7?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=QPL3BIJLG1I9&keywords=dragon+ball+manga&qid=1643348146&sprefix=dragon+ball+manga%2Caps%2C294&sr=8-7" class="btn btn-primary">Comprar</a>
+        <a data-toggle="collapse" href="#collapseExample11" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" class="btn bt-success text-white">Más >></a>
+      </p>
+      </div>
+    </div>
+  </div>
+   
+  <div class="col-sm-3"style="margin-bottom: 40px;">
+    <div class="card bg-dark ">
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-center"><img id="img_obs" width="220px" height="300px" src="https://images-na.ssl-images-amazon.com/images/I/91FQxJ72WhL.jpg"></h5>
+        <p class="card-text text-white"><label id="desayuno">Hitorijime Boyfriend </label><br>Edición Inglés <br> Pasta blanda<br>
+        Incluye: S/49.86</p>
+        <p class="collapse text-white" id="collapseExample12">
+           Mi hermoso y antiguo mejor amigo, con quien me he encontrado de nuevo después de tanto tiempo. En el invierno de sexto grado, Kensuke estaba molesto por separarse de su mejor amigo  en la secundaria, así que terminó su amistad.
+  </p>
+        <p class="card-text text-right">
+        <a  href="https://www.amazon.com.mx/Hitorijime-Boyfriend-My-Hero/dp/1632369338/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=QC6NY2QBEZZK&keywords=hitorijime+my+boyfriend+manga&qid=1643349322&s=books&sprefix=hitorijime+my+boyfriend+manga%2Cstripbooks%2C138&sr=1-1" class="btn btn-primary">Comprar</a>
+        <a data-toggle="collapse" href="#collapseExample12" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" class="btn bt-success text-white">Más >></a>
+      </p>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="col-sm-3" style="margin-bottom: 40px;">
+    <div class="card bg-dark ">
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-center"><img id="img_obs" width="220px" height="300px" src="https://images-na.ssl-images-amazon.com/images/I/71hGFGcQtuL.jpg"></h5>
+        <p class="card-text text-white"><label id="desayuno"></label>Parasyte 01: Kiseijuu vol. 1<br>por Hitoshi Iwaaki <br>Pasta blanda<br>
+        Incluye: S/64.78</p>
+        <p class="collapse text-white" id="collapseExample13">
+          Shinichi Izumi es un adolescente normal hasta que unos organismos invaden la Tierra. Se trata de parásitos que se introducen dentro de los humanos , con el objetivo de dominar su cerebro,Shin está luchando por el control de su propio cuerpo. 
+  </p>
+        <p class="card-text text-right">
+        <a href="https://www.amazon.com.mx/Parasyte-01-Hitoshi-Iwaaki/dp/8416693536/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=5F1NNZV4TH36&keywords=parasite+manga&qid=1643349230&s=books&sprefix=parasyte+manga%2Cstripbooks%2C229&sr=1-1" class="btn btn-primary">Comprar</a>
+        <a data-toggle="collapse" href="#collapseExample13" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" class="btn bt-success text-white">Más >></a>
+      </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3" style="margin-bottom: 40px;">
+    <div class="card bg-dark ">
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-center"><img id="img_obs" width="220px" height="300px" src="https://images-na.ssl-images-amazon.com/images/I/7191ecv0ZgL.jpg"></h5>
+        <p class="card-text text-white"><label id="desayuno"></label>Given N.1<br>por Natsuki Kizu <br>Pasta blanda<br>
+        Incluye: S/22.06</p>
+        <p class="collapse text-white" id="collapseExample14">
+          Desde que Uenoyama conoce a Mafuyu, su vida se convierte en un desastre. Algo se mueve en su interior cuando ve la cara de perrito abandonado de ese chico tierno. Sin embargo, esconde tras su mirada melancólica un secreto sobre su pasado amoroso. 
+  </p>
+        <p class="card-text text-right">
+        <a href="https://www.amazon.com.mx/Given-N-1-Natsuki-Kizu/dp/6076349352/ref=sr_1_3?keywords=bj+alex+manwha+espa%C3%B1ol&qid=1643350073&s=books&sprefix=bj+alex+%2Cstripbooks%2C259&sr=1-3" class="btn btn-primary">Comprar</a>
+        <a data-toggle="collapse" href="#collapseExample14" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" class="btn bt-success text-white">Más >></a>
+      </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3" style="margin-bottom: 40px;">
+    <div class="card bg-dark ">
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-center"><img id="img_obs" width="220px" height="300px" src="https://images-na.ssl-images-amazon.com/images/I/81wdZRhBjxL.jpg"></h5>
+        <p class="card-text text-white"><label id="desayuno"></label>Alice in Borderland Vol. 1<br>Edición Inglés <br>Pasta blanda<br>
+        Incluye: S/70.65</p>
+        <p class="collapse text-white" id="collapseExample15">
+          Ryohei Arisu, de dieciocho años, está harto de su vida. La escuela apesta  y su futuro se siente como una muerte inminente. Cuando un extraños fuegos artificiales los transportan a un mundo paralelo,cree que todos sus deseos se han hecho realidad.
+  </p>
+        <p class="card-text text-right">
+        <a href="https://www.amazon.com/-/es/Haro-Aso/dp/1974728374/ref=sr_1_1?crid=ET3E7FNWZGK2&keywords=alice+in+borderland+manga&qid=1643349797&sprefix=alice+in+bor%2Caps%2C309&sr=8-1" class="btn btn-primary">Comprar</a>
+        <a data-toggle="collapse" href="#collapseExample15" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" class="btn bt-success text-white">Más >></a>
+      </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3" style="margin-bottom: 40px;">
+    <div class="card bg-dark ">
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-center"><img id="img_obs" width="220px" height="300px" src="https://images-na.ssl-images-amazon.com/images/I/81SDFgoVgyS.jpg"></h5>
+        <p class="card-text text-white"><label id="desayuno"></label>Historias del Multiverso Oscuro<br>DC Comics Deluxe<br>pasta dura<br>
+        Incluye: S/70.25</p>
+        <p class="collapse text-white" id="collapseExample16">
+          Los momentos más memorables en la grandiosa historia de DC juntos... reimaginados para ¡un nuevo y oscuro mundo! El Multiverso Oscuro...  Aquí, los eventos cruciales que dieron forma al Universo DC ocurrieron de manera distinta,más siniestros.
+  </p>
+        <p class="card-text text-right">
+        <a href="https://www.amazon.com.mx/Historias-del-Multiverso-Oscuro-Comics/dp/B096WDXBY3/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=CA398BYODC1Y&keywords=comics+en+espa%C3%B1ol&qid=1643350580&s=books&sprefix=comics+en+espa%C3%B1ol%2Cstripbooks%2C935&sr=1-1" class="btn btn-primary">Comprar</a>
+        <a data-toggle="collapse" href="#collapseExample16" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" class="btn bt-success text-white">Más >></a>
+      </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3" style="margin-bottom: 40px;">
+    <div class="card bg-dark ">
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-center"><img id="img_obs" width="220px" height="300px" src="https://images-na.ssl-images-amazon.com/images/I/91agPrVabTL.jpg"></h5>
+        <p class="card-text text-white"><label id="desayuno"></label> La unidad de aventuras acuáticas<br>Tapa blanda<br>
+        Incluye: S/43.00</p>
+        <p class="collapse text-white" id="collapseExample17">
+          Inéditas y maravillosas aventuras de Bob Esponja. Una colección de historias en forma de cómic que nunca antes fueron llevadas a la pantalla de televisión y dibujadas directamente por Stephen Hillenburg, el creador de este divertido personaje. 
+  </p>
+        <p class="card-text text-right">
+        <a href="https://www.amazon.com/-/es/Stephen-Hillenburg/dp/8417305718/ref=sr_1_12?crid=3LQZBDEAP3ZX0&keywords=comics+en+espa%C3%B1ol&qid=1643350909&sprefix=comics+en+e%2Caps%2C353&sr=8-12" class="btn btn-primary">Comprar</a>
+        <a data-toggle="collapse" href="#collapseExample17" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" class="btn bt-success text-white">Más >></a>
+      </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3" style="margin-bottom: 40px;">
+    <div class="card bg-dark ">
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-center"><img id="img_obs" width="220px" height="300px" src="https://images-na.ssl-images-amazon.com/images/I/81vqPJwJwrL.jpg"></h5>
+        <p class="card-text text-white"><label id="desayuno"></label>Frida Kahlo: Una biografía<br>Edición en Español <br>Tapa dura <br>
+        Incluye: S/ 63.70 </p>
+        <p class="collapse text-white" id="collapseExample18">
+          «Pies, para qué los quiero si tengo alas para volar».
+          <br>
+
+
+          Frida Quiso ser fiel a su arrolladora personalidad y se convirtió en una artista llena de vida. Su pintura es fiesta, color, sangre y vida. Inspirado en las vivencias de la icónica pintora mexicana.
+  </p>
+        <p class="card-text text-right">
+        <a href="https://www.amazon.com/-/es/Maria-Hesse/dp/8426403433/ref=sr_1_8?crid=3LQZBDEAP3ZX0&keywords=comics+en+espa%C3%B1ol&qid=1643350909&sprefix=comics+en+e%2Caps%2C353&sr=8-8" class="btn btn-primary">Comprar</a>
+        <a data-toggle="collapse" href="#collapseExample18" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" class="btn bt-success text-white">Más >></a>
+      </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3" style="margin-bottom: 40px;">
+    <div class="card bg-dark ">
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-center"><img id="img_obs" width="220px" height="300px" src="https://images-na.ssl-images-amazon.com/images/I/51vur7o6ZEL.jpg"></h5>
+        <p class="card-text text-white"><label id="desayuno"></label>Garfield: Hambre de Diversion <br>Edición en Español<br>Tapa blanda<br>
+        Incluye: S/177.07</p>
+        <p class="collapse text-white" id="collapseExample19">
+          ¿Hambriento? Sí, dice Garfield, que siempre tiene hambre de lasaña y siempre busca problemas. En esta primera colección en español especialmente para lectores de grado medio, Garfield comparte que él también siempre tiene hambre de diversión.
+  </p>
+        <p class="card-text text-right">
+        <a href="https://www.amazon.com/-/es/Jim-Davis/dp/1449469140/ref=sr_1_7?crid=3LQZBDEAP3ZX0&keywords=comics+en+espa%C3%B1ol&qid=1643350909&sprefix=comics+en+e%2Caps%2C353&sr=8-7" class="btn btn-primary">Comprar</a>
+        <a data-toggle="collapse" href="#collapseExample19" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" class="btn bt-success text-white">Más >></a>
+      </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-3" style="margin-bottom: 40px;">
+    <div class="card bg-dark ">
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-center"><img id="img_obs" width="220px" height="300px" src="https://images-na.ssl-images-amazon.com/images/I/71z-KTBBTpL.jpg"></h5>
+        <p class="card-text text-white"><label id="desayuno"></label>Heartstopper Volume 1<br>de Alice Oseman<br>Tapa blanda <br>
+        Incluye: S/64.21</p>
+        <p class="collapse text-white" id="collapseExample20">
+          Charlie y Nick están en la misma escuela, pero nunca se conocieron... hasta que un día los obligaron a sentarse juntos. Rápidamente se hacen amigos, y pronto Charlie se enamora de Nick, a pesar de que no cree que tenga ninguna oportunidad.
+  </p>
+        <p class="card-text text-right">
+        <a href="https://www.amazon.com/-/es/Alice-Oseman/dp/1444951386/ref=pd_sim_3/134-1195518-9499525?pd_rd_w=ElCDp&pf_rd_p=dee70060-7c6d-4721-a321-50a27281cd22&pf_rd_r=NGTB0FQZ8BHRRK3YQ80E&pd_rd_r=b9bb120f-e290-4a5e-8950-7e2bfd3febae&pd_rd_wg=r5GDm&pd_rd_i=1444951386&psc=1" class="btn btn-primary">Comprar</a>
+        <a data-toggle="collapse" href="#collapseExample20" role="button" aria-expanded="false" aria-controls="collapseExample" href="#" class="btn bt-success text-white">Más >></a>
+      </p>
+      </div>
+    </div>
+  </div>
+   </div>
+ </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ <script src="js/indexjs.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

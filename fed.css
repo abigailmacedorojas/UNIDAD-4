@@ -1,0 +1,81 @@
+.bg-gray {
+    background-color: #ffffff;
+  }
+  .fs-0 {
+    font-size: 4rem;
+  }
+  .fs-7 {
+    font-size: 0.8rem;
+  }
+  /* nav button */
+  .nav__btn button:hover {
+    background: #f1f51f !important;
+  }
+  .nav__btn button:hover i {
+    color: #fd3d0d !important;
+  }
+  .dropdown-item:active {
+    background-color: #d5d5d5 !important;
+  }
+
+
+
+
+
+
+  
+  <div class="container-form sign-up">
+  <div class="welcome-back">
+      <div class="message">
+          <h2 style="font-family: hol; font-size: 50px; margin-top: -250px;">Bienvenido a ComComics</h2>
+          <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
+          <button class="sign-up-btn">Iniciar Sesion</button>
+      </div>
+  </div>
+  <form class="formulario">
+      <h2 class="create-account" style="font-family: hol;">Crear una cuenta</h2>
+      <div class="iconos">
+          <div class="border-icon">
+              <i class='bx bxl-instagram'></i>
+          </div>
+          <div class="border-icon">
+              <i class='bx bxl-linkedin' ></i>
+          </div>
+          <div class="border-icon">
+              <i class='bx bxl-facebook-circle' ></i>
+          </div>
+      </div>
+      <p class="cuenta-gratis">Crear una cuenta gratis</p>
+      <input type="text" placeholder="Nombre">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Contraseña">
+     <a href="feed.html" style="text-decoration: none;"> <input type="button" value="Registrarse"></a>
+  </form>
+</div>
+<div class="container-form sign-in">
+  <form class="formulario">
+      <h2 class="create-account" style="font-family: hol;">Iniciar Sesion</h2>
+      <div class="iconos">
+          <div class="border-icon">
+              <i class='bx bxl-instagram'></i>
+          </div>
+          <div class="border-icon">
+              <i class='bx bxl-linkedin' ></i>
+          </div>
+          <div class="border-icon">
+              <i class='bx bxl-facebook-circle' ></i>
+          </div>
+      </div>
+      <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Contraseña">
+     <a href="feed.html" style="text-decoration: none;"> <input type="button" value="Iniciar Sesion"></a>
+  </form>
+  <div class="welcome-back">
+      <div class="message">
+          <h2 style="font-family: hol; font-size: 50px;">Bienvenido de nuevo</h2>
+          <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+          <button class="sign-in-btn">Registrarse</button>
+      </div>
+  </div>
+</div>
